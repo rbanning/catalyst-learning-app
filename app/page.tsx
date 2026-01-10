@@ -1,12 +1,15 @@
 import Image from "next/image";
-import appImage from "@/public/app-images/catalyst-64.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFaceSmile } from "@fortawesome/free-regular-svg-icons";
 
+import appImage from "@/public/app-images/catalyst-64.png";
+import hallpassImage from "@/public/hallpass.128.png";
+
 export default function Home() {
   const size = 48;
+  const logoSize = 24;
   return (
-    <div className="max-w-xl mx-auto mt-36">
+    <div className="relative max-w-xl mx-auto mt-36">
       <div>
         <h1 className="flex items-center gap-2">
           <Image
@@ -21,6 +24,15 @@ export default function Home() {
           Accelerate your strategic thinking with interactive scenarios
           <FontAwesomeIcon icon={faFaceSmile} />
         </p>
+        <div className="fixed bottom-0 left-0 flex justify-center items-center gap-2 w-full py-2 bg-gray-700 text-gray-50">
+          <Image
+            src={hallpassImage}
+            alt="Hallpass and Friends Logo"
+            width={logoSize}
+            height={logoSize}
+          />
+          <span>Created by <a href="https://academy.hallpassandfriends.com">Hallpass and Friends</a></span>
+        </div>
       </div>
     </div>
   );

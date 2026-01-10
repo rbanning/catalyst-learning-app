@@ -10,6 +10,7 @@ config.autoAddCss = false
 export const metadata: Metadata = {
   title: "Catalyst Learning",
   description: "Accelerate your strategic thinking with interactive scenarios",
+  creator: "Hallpass and Friends"
 };
 
 export default function RootLayout({
