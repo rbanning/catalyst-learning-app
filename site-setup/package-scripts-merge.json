@@ -1,0 +1,10 @@
+  {
+  "scripts": {
+    "dev": "next dev --experimental-https",
+    "turbo": "next dev --turbopack --experimental-https",
+    "build": "next build --turbopack",
+    "build-og": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  }
+}
