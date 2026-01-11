@@ -13,6 +13,21 @@ const eslintConfig = defineConfig([
     "build/**",
     "next-env.d.ts",
   ]),
+
+  // application specific rules
+  {
+    files: ["src/**/*.ts", "src/**/*.tsx"],
+    rules: {
+      "@typescript-eslint/no-unused-vars": [
+          "error", {
+            "varsIgnorePattern": "^[ignore | _]",
+            "argsIgnorePattern": "^_",
+            "caughtErrorsIgnorePattern": "[ignore | _]",
+          },
+        ]
+    }
+  }
+
 ]);
 
 export default eslintConfig;
