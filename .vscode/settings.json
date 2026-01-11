@@ -21,5 +21,9 @@
   "peacock.color": "#007fff",
   "css.customData": [
     "./.vscode/css-data.json"
-  ]  
+  ],
+  "cSpell.words": [
+    "hallpassandfriends",
+    "turbopack"
+  ]
 }
