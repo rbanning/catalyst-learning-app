@@ -1,0 +1,87 @@
+
+/* HEADINGS */
+
+h1 { 
+  @apply mb-8 flex items-center justify-center gap-2 font-serif font-light text-hallpass-primary text-4xl sm:text-5xl; 
+  &.left { @apply justify-start; }
+  &.center { @apply justify-center; }
+  &.right { @apply justify-end; }
+  &.small { @apply text-3xl; }
+}
+h2 { 
+  @apply mb-6 flex items-center justify-start gap-2 font-serif font-semibold text-hallpass-primary-dark text-2xl sm:text-3xl; 
+  &.left { @apply justify-start; }
+  &.center { @apply justify-center; }
+  &.right { @apply justify-end; }
+  &.small { @apply text-2xl; }
+}
+h3 { 
+  @apply mb-2 flex items-center justify-start gap-2 font-sans font-bold text-hallpass-secondary uppercase text-lg sm:text-xl; 
+  &.left { @apply justify-start; }
+  &.center { @apply justify-center; }
+  &.right { @apply justify-end; }
+  &.small { @apply text-lg; }
+}
+h4 { 
+  @apply mb-1 flex items-center justify-start gap-2 font-sans font-bold text-hallpass-neutral-light text-lg sm:text-xl; 
+  &.left { @apply justify-start; }
+  &.center { @apply justify-center; }
+  &.right { @apply justify-end; }
+  &.small { @apply text-base; }
+}
+h1, h2, h3, h4 {
+  &.no-margin { @apply mb-0; }
+}
+
+/* LINKS */
+a.primary, .a-primary { 
+  @apply font-semibold text-hallpass-primary-dark hover:text-hallpass-primary-dark/80 
+  contrast-more:text-black
+  border-b-2 border-b-hallpass-primary-light/50 hover:border-b-hallpass-primary-dark
+  transition-colors duration-300;
+}
+
+a.secondary, .a-secondary { 
+  @apply font-semibold text-hallpass-secondary-dark hover:text-hallpass-secondary-dark/80 
+  contrast-more:text-black
+  border-b-2 border-b-hallpass-secondary-light/50 hover:border-b-hallpass-secondary-dark
+  transition-colors duration-300;
+}
+
+a.neutral, .a-neutral { 
+  @apply font-semibold text-hallpass-neutral-dark hover:text-hallpass-neutral-dark/80 
+  contrast-more:text-black
+  border-b-2 border-b-hallpass-neutral-light/50 hover:border-b-hallpass-neutral-dark
+  transition-colors duration-300;
+}
+
+a.black, .a-black { 
+  @apply font-semibold text-black hover:text-black/80 
+  contrast-more:text-black
+  border-b-2 border-b-black/50 hover:border-b-black
+  transition-colors duration-300;
+}
+a.white, .a-white { 
+  @apply font-semibold text-white hover:text-white/80 
+  contrast-more:text-white
+  border-b-2 border-b-white/50 hover:border-b-white
+  transition-colors duration-300;
+}
+
+a.alt-underline {
+  @apply relative
+    after:content-['']
+    after:absolute
+    after:bottom-0
+    after:left-0
+    after:w-full 
+    after:h-px
+    hover:after:h-0.5
+    hover:after:bg-stone-600
+    after:bg-stone-600/50;
+}
+a.alt-underline.on-dark-bg {
+  @apply 
+    hover:after:bg-stone-100
+    after:bg-stone-100/50;
+}
