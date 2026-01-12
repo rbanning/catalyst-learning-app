@@ -9,6 +9,7 @@
 function buildThemeComponent(name, filename) {
   const TAB = '  ';
   const DEFAULT = 'Default';
+  const SURFACE = 'surface';
   const colors = ['neutral', 'primary', 'secondary', 'error'];
   const variants = ['light', DEFAULT, 'dark'];
   const textSizes = ['text-sm', 'text-base', 'text-lg', 'text-xl'];
@@ -18,13 +19,15 @@ function buildThemeComponent(name, filename) {
 
 
   const output = [
+    `import { AySection } from "@/ui/base-ui/server";`,
+    ``,
     `export function ${name}() {`,
     `return (`,
     `<div>`
   ];
 
   //#region COLOR
-  output.push('<details className="my-12"><summary className="cursor-pointer font-bold text-xl">Colors</summary><div className="my-4 pl-4 border-l-8 border-slate-300">');
+  output.push('<details className="my-12 view-area"><summary className="cursor-pointer font-bold text-xl">Colors</summary><div className="my-4 pl-4 border-l-8 border-slate-300">');
 
   for (const color of colors) {
     output.push(`${TAB}<details className="my-6">
@@ -93,7 +96,7 @@ function buildThemeComponent(name, filename) {
   //#endregion 
 
   //#region FONT
-  output.push('<details className="my-12"><summary className="cursor-pointer font-bold text-xl">Fonts</summary><div className="my-4 pl-4 border-l-8 border-slate-300">');
+  output.push('<details className="my-12 view-area"><summary className="cursor-pointer font-bold text-xl">Fonts</summary><div className="my-4 pl-4 border-l-8 border-slate-300">');
 
     output.push(`${TAB}<details className="my-6">
         <summary className="cursor-pointer text-lg font-bold">Typography Plugin <code>prose</code></summary>
@@ -133,8 +136,9 @@ function buildThemeComponent(name, filename) {
   //#endregion 
 
   //#region UI Elements
-  output.push('<details className="my-12"><summary className="cursor-pointer font-bold text-xl">UI Elements</summary><div className="my-4 pl-4 border-l-8 border-slate-300">');
+  output.push('<details className="my-12 view-area"><summary className="cursor-pointer font-bold text-xl">UI Elements</summary><div className="my-4 pl-4 border-l-8 border-slate-300">');
 
+  // --- HEADINGS --- 
   output.push(`<div className="text-xl font-bold">Headings</div>`);
   
   output.push(`<div className="text-lg font-medium">Without Margins</div>`);
@@ -150,6 +154,7 @@ function buildThemeComponent(name, filename) {
     output.push(`<${h}>Heading - ${h.toUpperCase()}</${h}>`);
   }
 
+  // --- LINKS ---
   output.push(`<div className="text-xl font-bold mt-12">Links</div>`);
   
   output.push(`<div className="text-lg font-medium">General</div>`);
@@ -157,10 +162,41 @@ function buildThemeComponent(name, filename) {
     output.push(`<div className="my-1"><a href="#" className="${color}">Link ${color.toUpperCase()}</a></div>`);
   }
 
-
+  
   output.push('</div></details>');
+
   //#endregion 
 
+  //#region --- SECTIONS - outside of the regular UI Element details
+// --- SECTIONS ---
+
+  output.push(`<div className="mt-12 text-4xl font-medium text-center">Sections</div>`);
+
+  for (const color of [SURFACE, ...colors]) {
+    for (const variant of variants) {
+      const textColor = ''; // all text color will be inherited
+      
+      output.push(`<AySection color="${color}" ${variant === DEFAULT ? '' : ('intensity="'+variant+'"')} ${color === SURFACE ? '' : ('opacity="minimal"')}>
+  <div className="font-bold text-xl">SECTION - ${color} - ${variant} - ${color === SURFACE ? 'full opacity' : 'minimal opacity'}</div>
+  <div className="my-4 ${textColor}">
+  Irure officia dolore aliqua cillum dolor sit duis sunt. Ullamco qui cupidatat duis enim. Culpa culpa et consequat eu labore aute. In reprehenderit non velit ex tempor velit.
+  Lorem sint mollit voluptate dolor anim dolor. Ex commodo minim velit minim aliqua sit veniam aute eu esse velit nisi adipisicing. Do aliqua labore adipisicing magna esse do exercitation deserunt et sit sunt esse proident. Veniam sunt amet nostrud consectetur aliqua laborum elit deserunt pariatur consectetur Lorem reprehenderit. Velit deserunt ad Lorem sint cillum excepteur aliqua cupidatat id. Magna quis nulla aliqua aute id tempor velit amet.
+  Velit eiusmod non sit aliquip. Commodo magna id proident ad anim. Mollit exercitation nisi amet anim sint esse consectetur incididunt nisi. Ullamco laboris nisi irure ullamco esse ipsum adipisicing dolor proident aute dolor. Aliquip nisi do ea elit mollit ea amet aliqua ad. Incididunt ullamco exercitation laborum minim voluptate commodo ea laboris amet Lorem do. In mollit nostrud esse anim nulla ut veniam occaecat nisi deserunt sit cillum voluptate tempor.
+  </div>
+</AySection>`);
+      if (color !== SURFACE) {
+      output.push(`<AySection color="${color}" ${variant === DEFAULT ? '' : ('intensity="'+variant+'"')} ${color === SURFACE ? '' : ('opacity="quarter"')}>
+  <div className="font-bold text-xl">SECTION - ${color} - ${variant} - ${color === SURFACE ? 'full opacity' : 'quarter opacity'}</div>
+  <div className="my-4 ${textColor}">
+  Irure officia dolore aliqua cillum dolor sit duis sunt. Ullamco qui cupidatat duis enim. Culpa culpa et consequat eu labore aute. In reprehenderit non velit ex tempor velit.
+  Lorem sint mollit voluptate dolor anim dolor. Ex commodo minim velit minim aliqua sit veniam aute eu esse velit nisi adipisicing. Do aliqua labore adipisicing magna esse do exercitation deserunt et sit sunt esse proident. Veniam sunt amet nostrud consectetur aliqua laborum elit deserunt pariatur consectetur Lorem reprehenderit. Velit deserunt ad Lorem sint cillum excepteur aliqua cupidatat id. Magna quis nulla aliqua aute id tempor velit amet.
+  Velit eiusmod non sit aliquip. Commodo magna id proident ad anim. Mollit exercitation nisi amet anim sint esse consectetur incididunt nisi. Ullamco laboris nisi irure ullamco esse ipsum adipisicing dolor proident aute dolor. Aliquip nisi do ea elit mollit ea amet aliqua ad. Incididunt ullamco exercitation laborum minim voluptate commodo ea laboris amet Lorem do. In mollit nostrud esse anim nulla ut veniam occaecat nisi deserunt sit cillum voluptate tempor.
+  </div>
+</AySection>`);
+      }
+    }
+  }
+  //#endregion
 
 
   output.push('</div>');

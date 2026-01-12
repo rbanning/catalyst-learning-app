@@ -1,4 +1,11 @@
 
+/* GLOBAL */
+html, body {
+  @apply font-sans text-hallpass-neutral-dark bg-hallpass-background;
+  font-size: 16px;
+}
+
+
 /* HEADINGS */
 
 h1 { 
