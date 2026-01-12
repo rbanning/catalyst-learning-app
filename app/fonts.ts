@@ -1,6 +1,6 @@
-import { Cabin, Newsreader, Roboto_Serif } from 'next/font/google';
+import { Newsreader, Noto_Sans_Display, Roboto_Serif } from 'next/font/google';
 
-export const font_sans = Cabin({
+export const font_sans = Noto_Sans_Display({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-sans'
