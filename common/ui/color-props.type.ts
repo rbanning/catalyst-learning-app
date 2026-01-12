@@ -1,8 +1,7 @@
-import { Nullable } from '../types';
 import { ThemeColorBasic, ThemeColorIntensity, ThemeColorOpacity } from "../styles/theme-colors"
 
-export type ColorProps<TColor extends ThemeColorBasic = ThemeColorBasic> = {
+export type ColorProps<TColor extends string = ThemeColorBasic> = {
   color: TColor;
-  intensity?: Nullable<ThemeColorIntensity>;
-  opacity?: Nullable<ThemeColorOpacity>;
+  intensity?: ThemeColorIntensity;
+  opacity?: ThemeColorOpacity;
 }
