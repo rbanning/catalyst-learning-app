@@ -19,13 +19,25 @@ function buildThemeComponent(name, filename) {
     var SURFACE = 'surface';
     var colors = ['neutral', 'primary', 'secondary', 'error'];
     var variants = ['light', DEFAULT, 'dark'];
+    var opacityList = ['full', 'mostly', 'half', 'quarter', 'minimal'];
+    var opacityRec = {
+        'full': '',
+        'mostly': '/75',
+        'half': '/50',
+        'quarter': '/25',
+        'minimal': '/10'
+    };
     var textSizes = ['text-sm', 'text-base', 'text-lg', 'text-xl'];
     var fontWeights = ['font-thin', 'font-light', 'font-normal', 'font-semibold', 'font-bold', 'font-black'];
     var feedbacks = ['success', 'warning', 'invalid'];
     var typefaces = ['font-sans', 'font-serif', 'font-mono', 'font-brand'];
     var headings = ['h1', 'h2', 'h3', 'h4'];
+    var buttonSizes = ['thin', 'sm', 'md', 'lg'];
+    var hoverTypes = ['none', 'bottom', 'bg', 'grow'];
     var output = [
+        "",
         "import { AySection } from \"@/ui/base-ui/server\";",
+        "import { ButtonBase, Button, ButtonSolid, ButtonOutline } from \"@/ui/base-ui/client\";",
         "",
         "export function ".concat(name, "() {"),
         "return (",
@@ -107,12 +119,34 @@ function buildThemeComponent(name, filename) {
         output.push("</div>");
         output.push(details.close()); // end of the specific color
     }
+    // Massive
+    output.push(details.open('All Color Combinations', { secondary: true, margin: 'minimum', border: 'box' }));
+    //all color combinations
+    output.push("<div className=\"flex flex-wrap gap-x-4 gap-y-2\">");
+    for (var _l = 0, _m = __spreadArray(['black', 'white'], colors, true); _l < _m.length; _l++) {
+        var color = _m[_l];
+        for (var _o = 0, variants_6 = variants; _o < variants_6.length; _o++) {
+            var variant = variants_6[_o];
+            var variantColor = color + (variant === DEFAULT ? '' : "-".concat(variant));
+            output.push("<span className=\"text-hallpass-".concat(variantColor, " text-lg font-bold px-2 py-1\">").concat(variantColor, "</span>"));
+            for (var _p = 0, opacityList_1 = opacityList; _p < opacityList_1.length; _p++) {
+                var opacity = opacityList_1[_p];
+                var bg = variantColor + opacityRec[opacity];
+                var text = opacity === 'mostly' || opacity === 'full'
+                    ? "text-hallpass-on-".concat(variantColor)
+                    : "text-hallpass-".concat(variantColor);
+                output.push("<span className=\"bg-hallpass-".concat(bg, " ").concat(text, " font-medium px-2 py-1\">").concat(opacity, " ").concat(text, "</span>"));
+            }
+        }
+    }
+    output.push("</div>"); //end all color combinations
+    output.push(details.close()); //massive
     // FEEDBACK
     output.push(details.open('Feedback', { secondary: true, margin: 'minimum', border: 'box' }));
     //feedback colors    
     output.push("<div className=\"grid grid-cols-3 gap-x-4\">");
-    for (var _l = 0, feedbacks_1 = feedbacks; _l < feedbacks_1.length; _l++) {
-        var feedback = feedbacks_1[_l];
+    for (var _q = 0, feedbacks_1 = feedbacks; _q < feedbacks_1.length; _q++) {
+        var feedback = feedbacks_1[_q];
         output.push("<div>");
         output.push("<div className=\"text-lg font-bold text-hallpass-feedback-".concat(feedback, "\">").concat(feedback, "</div>"));
         output.push("<div className=\"my-2 flex items-center gap-4\">");
@@ -121,8 +155,8 @@ function buildThemeComponent(name, filename) {
         }
         output.push('</div>'); //end boxes
         output.push("<div className=\"my-2 flex items-center gap-4\">");
-        for (var _m = 0, _o = ['text-xs', 'text-sm', 'text-base']; _m < _o.length; _m++) {
-            var badge = _o[_m];
+        for (var _r = 0, _s = ['text-xs', 'text-sm', 'text-base']; _r < _s.length; _r++) {
+            var badge = _s[_r];
             output.push("<span className=\"".concat(badge, " px-2 py-1 bg-hallpass-feedback-").concat(feedback, " text-white\">").concat(badge, "</span>"));
         }
         output.push('</div>'); //end badges
@@ -136,27 +170,27 @@ function buildThemeComponent(name, filename) {
     output.push(details.open("Fonts", { container: true }));
     // Typography 
     output.push(details.open('Typography (prose)', { secondary: true, margin: 'minimum', border: 'box' }));
-    for (var _p = 0, textSizes_5 = textSizes; _p < textSizes_5.length; _p++) {
-        var size = textSizes_5[_p];
+    for (var _t = 0, textSizes_5 = textSizes; _t < textSizes_5.length; _t++) {
+        var size = textSizes_5[_t];
         var prose = 'prose' + size.replace('text', '').replace('-base', '');
         output.push("<p className=\"mb-4 ".concat(prose, "\"><strong>").concat(prose, "</strong> Lorem officia nisi dolore ea est consequat. Ex aute cillum aliqua voluptate Lorem cillum pariatur ullamco labore proident ex magna Lorem. Est nulla incididunt deserunt aute eiusmod id Lorem laboris dolor.</p>"));
     }
     output.push(details.close()); //end typography
     // Typefaces
-    for (var _q = 0, typefaces_1 = typefaces; _q < typefaces_1.length; _q++) {
-        var font = typefaces_1[_q];
+    for (var _u = 0, typefaces_1 = typefaces; _u < typefaces_1.length; _u++) {
+        var font = typefaces_1[_u];
         output.push(details.open(font.replace('font-', ''), { secondary: true, margin: 'minimum', border: 'box' }));
-        for (var _r = 0, colors_2 = colors; _r < colors_2.length; _r++) {
-            var color = colors_2[_r];
-            for (var _s = 0, variants_6 = variants; _s < variants_6.length; _s++) {
-                var variant = variants_6[_s];
+        for (var _v = 0, colors_2 = colors; _v < colors_2.length; _v++) {
+            var color = colors_2[_v];
+            for (var _w = 0, variants_7 = variants; _w < variants_7.length; _w++) {
+                var variant = variants_7[_w];
                 output.push("<div className=\"my-4 text-hallpass-".concat(color).concat(variant === DEFAULT ? '' : ('-' + variant), "\">"));
                 output.push("<div className=\"font-bold text-2xl\">".concat(font.replace('font-', ''), " ").concat(color).concat(variant === DEFAULT ? '' : ('-' + variant), "</div>"));
-                for (var _t = 0, textSizes_6 = textSizes; _t < textSizes_6.length; _t++) {
-                    var size = textSizes_6[_t];
+                for (var _x = 0, textSizes_6 = textSizes; _x < textSizes_6.length; _x++) {
+                    var size = textSizes_6[_x];
                     output.push("<div className=\"flex flex-wrap items-center gap-x-4 ".concat(size, "\">"));
-                    for (var _u = 0, fontWeights_2 = fontWeights; _u < fontWeights_2.length; _u++) {
-                        var weight = fontWeights_2[_u];
+                    for (var _y = 0, fontWeights_2 = fontWeights; _y < fontWeights_2.length; _y++) {
+                        var weight = fontWeights_2[_y];
                         output.push("<span className=\"".concat(weight, "\">").concat(capitalize(font.replace('font-', '')), " ").concat(capitalize(size.replace('text-', '')), " ").concat(capitalize(weight.replace('font-', '')), "</span>"));
                     }
                     output.push('</div>');
@@ -173,25 +207,25 @@ function buildThemeComponent(name, filename) {
     // --- HEADINGS --- 
     output.push("<div className=\"text-xl font-bold\">Headings</div>");
     output.push("<div className=\"text-lg font-medium\">Without Margins</div>");
-    for (var _v = 0, headings_1 = headings; _v < headings_1.length; _v++) {
-        var h = headings_1[_v];
+    for (var _z = 0, headings_1 = headings; _z < headings_1.length; _z++) {
+        var h = headings_1[_z];
         output.push("<".concat(h, " className=\"no-margin\">Heading - ").concat(h.toUpperCase(), "</").concat(h, ">"));
     }
     output.push("<div className=\"text-lg font-medium\">Without Margins (SMALL)</div>");
-    for (var _w = 0, headings_2 = headings; _w < headings_2.length; _w++) {
-        var h = headings_2[_w];
+    for (var _0 = 0, headings_2 = headings; _0 < headings_2.length; _0++) {
+        var h = headings_2[_0];
         output.push("<".concat(h, " className=\"no-margin small\">Heading - ").concat(h.toUpperCase(), "</").concat(h, ">"));
     }
     output.push("<div className=\"text-lg font-medium mt-8\">With Margins</div>");
-    for (var _x = 0, headings_3 = headings; _x < headings_3.length; _x++) {
-        var h = headings_3[_x];
+    for (var _1 = 0, headings_3 = headings; _1 < headings_3.length; _1++) {
+        var h = headings_3[_1];
         output.push("<".concat(h, ">Heading - ").concat(h.toUpperCase(), "</").concat(h, ">"));
     }
     // --- LINKS ---
     output.push("<div className=\"text-xl font-bold mt-12\">Links</div>");
     output.push("<div className=\"text-lg font-medium\">General</div>");
-    for (var _y = 0, colors_3 = colors; _y < colors_3.length; _y++) {
-        var color = colors_3[_y];
+    for (var _2 = 0, colors_3 = colors; _2 < colors_3.length; _2++) {
+        var color = colors_3[_2];
         output.push("<div className=\"my-1\"><a href=\"#\" className=\"".concat(color, "\">Link ").concat(color.toUpperCase(), "</a></div>"));
     }
     output.push(details.close()); //ui elements
@@ -200,10 +234,10 @@ function buildThemeComponent(name, filename) {
     // --- SECTIONS ---
     output.push(details.open("Sections", { container: false, border: 'none' }));
     output.push("<div className=\"mt-12 text-4xl font-medium text-center\">Sections</div>");
-    for (var _z = 0, _0 = __spreadArray([SURFACE], colors, true); _z < _0.length; _z++) {
-        var color = _0[_z];
-        for (var _1 = 0, variants_7 = variants; _1 < variants_7.length; _1++) {
-            var variant = variants_7[_1];
+    for (var _3 = 0, _4 = __spreadArray([SURFACE], colors, true); _3 < _4.length; _3++) {
+        var color = _4[_3];
+        for (var _5 = 0, variants_8 = variants; _5 < variants_8.length; _5++) {
+            var variant = variants_8[_5];
             var textColor = ''; // all text color will be inherited
             output.push("<AySection color=\"".concat(color, "\" ").concat(variant === DEFAULT ? '' : ('intensity="' + variant + '"'), " ").concat(color === SURFACE ? '' : ('opacity="minimal"'), ">\n  <div className=\"font-bold text-xl\">SECTION - ").concat(color, " - ").concat(variant, " - ").concat(color === SURFACE ? 'full opacity' : 'minimal opacity', "</div>\n  <div className=\"my-4 ").concat(textColor, "\">\n  Irure officia dolore aliqua cillum dolor sit duis sunt. Ullamco qui cupidatat duis enim. Culpa culpa et consequat eu labore aute. In reprehenderit non velit ex tempor velit.\n  Lorem sint mollit voluptate dolor anim dolor. Ex commodo minim velit minim aliqua sit veniam aute eu esse velit nisi adipisicing. Do aliqua labore adipisicing magna esse do exercitation deserunt et sit sunt esse proident. Veniam sunt amet nostrud consectetur aliqua laborum elit deserunt pariatur consectetur Lorem reprehenderit. Velit deserunt ad Lorem sint cillum excepteur aliqua cupidatat id. Magna quis nulla aliqua aute id tempor velit amet.\n  Velit eiusmod non sit aliquip. Commodo magna id proident ad anim. Mollit exercitation nisi amet anim sint esse consectetur incididunt nisi. Ullamco laboris nisi irure ullamco esse ipsum adipisicing dolor proident aute dolor. Aliquip nisi do ea elit mollit ea amet aliqua ad. Incididunt ullamco exercitation laborum minim voluptate commodo ea laboris amet Lorem do. In mollit nostrud esse anim nulla ut veniam occaecat nisi deserunt sit cillum voluptate tempor.\n  </div>\n</AySection>"));
             if (color !== SURFACE) {
@@ -213,6 +247,70 @@ function buildThemeComponent(name, filename) {
     }
     output.push(details.close()); //sections
     //#endregion
+    //#region BUTTONS 
+    output.push(details.open("Buttons", { container: true }));
+    //Button Base
+    output.push(details.open('Button Base', { secondary: true, margin: 'minimum', border: 'box' }));
+    output.push("<div className=\"grid grid-cols-".concat(buttonSizes.length, " gap-x-4\">"));
+    for (var _6 = 0, buttonSizes_1 = buttonSizes; _6 < buttonSizes_1.length; _6++) {
+        var size = buttonSizes_1[_6];
+        output.push("<div className=\"text-center\">\n      <ButtonBase size=\"".concat(size, "\">btn-").concat(size, "</ButtonBase>\n    </div>"));
+    }
+    output.push("</div>");
+    output.push(details.close()); //button base
+    //Button
+    output.push(details.open('Button', { secondary: true, margin: 'minimum', border: 'box' }));
+    for (var _7 = 0, hoverTypes_1 = hoverTypes; _7 < hoverTypes_1.length; _7++) {
+        var hover = hoverTypes_1[_7];
+        output.push("<div className=\"font-bold text-lg\">Hover ".concat(hover, "</div>"));
+        output.push("<div className=\"mb-4 grid grid-cols-".concat(buttonSizes.length, " gap-x-4\">"));
+        var index = 0;
+        for (var _8 = 0, buttonSizes_2 = buttonSizes; _8 < buttonSizes_2.length; _8++) {
+            var size = buttonSizes_2[_8];
+            var color = index >= colors.length ? '' : colors[index];
+            index += 1;
+            output.push("<div className=\"text-center\">\n        <Button size=\"".concat(size, "\" hover=\"").concat(hover, "\" color=\"").concat(color, "\">btn-").concat(size, "</Button>\n      </div>"));
+        }
+        output.push("</div>");
+    }
+    output.push(details.close()); //button
+    //Button Solid
+    output.push(details.open('Button Solid', { secondary: true, margin: 'minimum', border: 'box' }));
+    for (var _9 = 0, _10 = __spreadArray(['black'], colors, true); _9 < _10.length; _9++) {
+        var color = _10[_9];
+        output.push("<div className=\"font-bold text-lg\">".concat(color.toUpperCase(), "</div>"));
+        output.push("<div className=\"mb-4 grid grid-cols-".concat(colors.length + 1, " gap-x-4\">"));
+        var index = 0;
+        for (var _11 = 0, buttonSizes_3 = buttonSizes; _11 < buttonSizes_3.length; _11++) {
+            var size = buttonSizes_3[_11];
+            var variant = variants[index % variants.length];
+            var variantAttr = variant === DEFAULT ? '' : "intensity=\"".concat(variant, "\"");
+            index += 1;
+            output.push("<div className=\"text-center\">\n        <ButtonSolid size=\"".concat(size, "\" ").concat(variantAttr, " color=\"").concat(color, "\">btn-").concat(size, "-").concat(variant.toLocaleLowerCase(), "</ButtonSolid>\n      </div>"));
+        }
+        output.push("</div>");
+    }
+    output.push(details.close()); //button solid
+    //Button Outline
+    output.push(details.open('Button Outline', { secondary: true, margin: 'minimum', border: 'box' }));
+    for (var _12 = 0, _13 = __spreadArray(['black'], colors, true); _12 < _13.length; _12++) {
+        var color = _13[_12];
+        output.push("<div className=\"font-bold text-lg\">".concat(color.toUpperCase(), "</div>"));
+        output.push("<div className=\"mb-4 grid grid-cols-".concat(colors.length + 1, " gap-x-4\">"));
+        var index = 0;
+        for (var _14 = 0, buttonSizes_4 = buttonSizes; _14 < buttonSizes_4.length; _14++) {
+            var size = buttonSizes_4[_14];
+            var variant = variants[index % variants.length];
+            var variantAttr = variant === DEFAULT ? '' : "intensity=\"".concat(variant, "\"");
+            var bg = ['transparent', 'background', 'surface'][index % 3];
+            index += 1;
+            output.push("<div className=\"text-center\">\n        <ButtonOutline size=\"".concat(size, "\" ").concat(variantAttr, " color=\"").concat(color, "\" bg=\"").concat(bg, "\">btn-").concat(size, "-").concat(variant.toLocaleLowerCase(), "</ButtonOutline>\n      </div>"));
+        }
+        output.push("</div>");
+    }
+    output.push(details.close()); //button outline
+    output.push(details.close()); //buttons
+    //#endregion (buttons)
     output.push('</div>');
     output.push(');');
     output.push('}');

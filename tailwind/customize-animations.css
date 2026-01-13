@@ -1,0 +1,38 @@
+@theme {
+
+  --animate-wiggle: wiggle 1s ease-in-out infinite;
+  --animate-ripple: ripple 600ms ease-in-out;
+  --animate-opposite-ripple: opposite-ripple 600ms ease-in-out;
+  --animate-grow-in: growIn 600ms ease-in-out forwards;
+  --animate-grow-out: growOut 400ms ease-in-out forwards;
+  --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-pulse-slower: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-pulse-slowest: pulse 5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+
+  @keyframes wiggle{
+    0%, 100%: { transform: rotate(-3deg); }
+        50%: { transform: rotate(3deg); }
+  }
+
+  @keyframes ripple: {
+    from: { transform: scale(0); opacity: 1; }
+    to: { transform: scale(6), opacity: 0; }
+  }
+  @keyframes opposite-ripple {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(.9); opacity: 0.5; }
+    100% { transform: scale(1); opacity: 1; }       
+  }
+
+  @keyframes growIn: {
+    from: { transform: scale(0); opacity: 0; }
+    to: { transform: scale(1); opacity: 1; }
+  }
+  @keyframes growOut: {
+    from: { transform: scale(1); opacity: 1; }
+    to: { transform: scale(0); opacity: 0; }
+  }
+  
+  
+}

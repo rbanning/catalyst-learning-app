@@ -1,0 +1,12 @@
+/* 
+NOTE: this applies to the ButtonSolid component @/ui/base-ui/client/buttons/button-solid 
+      and replaces the use of module css (button-solid.module.css)
+*/
+
+.button-solid {
+  @apply px-8 py-1 rounded-2xl 
+      shadow-sm hover:shadow-md hover:shadow-black
+      focus:ring-1 focus:ring-hallpass-surface-dark focus:shadow-lg;
+
+
+}

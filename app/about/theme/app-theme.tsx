@@ -1,4 +1,6 @@
+
 import { AySection } from "@/ui/base-ui/server";
+import { ButtonBase, Button, ButtonSolid, ButtonOutline } from "@/ui/base-ui/client";
 
 export function AppTheme() {
 return (
@@ -864,6 +866,122 @@ return (
 <span className="text-xl">xlRandomText</span>
 </div>
 </div>
+</div>
+</div>
+</details>
+<details className="my-6">
+<summary className="cursor-pointer font-bold text-lg">All Color Combinations</summary>
+<div className="my-4 px-4 border border-slate-200">
+
+<div className="flex flex-wrap gap-x-4 gap-y-2">
+<span className="text-hallpass-black-light text-lg font-bold px-2 py-1">black-light</span>
+<span className="bg-hallpass-black-light text-hallpass-on-black-light font-medium px-2 py-1">full text-hallpass-on-black-light</span>
+<span className="bg-hallpass-black-light/75 text-hallpass-on-black-light font-medium px-2 py-1">mostly text-hallpass-on-black-light</span>
+<span className="bg-hallpass-black-light/50 text-hallpass-black-light font-medium px-2 py-1">half text-hallpass-black-light</span>
+<span className="bg-hallpass-black-light/25 text-hallpass-black-light font-medium px-2 py-1">quarter text-hallpass-black-light</span>
+<span className="bg-hallpass-black-light/10 text-hallpass-black-light font-medium px-2 py-1">minimal text-hallpass-black-light</span>
+<span className="text-hallpass-black text-lg font-bold px-2 py-1">black</span>
+<span className="bg-hallpass-black text-hallpass-on-black font-medium px-2 py-1">full text-hallpass-on-black</span>
+<span className="bg-hallpass-black/75 text-hallpass-on-black font-medium px-2 py-1">mostly text-hallpass-on-black</span>
+<span className="bg-hallpass-black/50 text-hallpass-black font-medium px-2 py-1">half text-hallpass-black</span>
+<span className="bg-hallpass-black/25 text-hallpass-black font-medium px-2 py-1">quarter text-hallpass-black</span>
+<span className="bg-hallpass-black/10 text-hallpass-black font-medium px-2 py-1">minimal text-hallpass-black</span>
+<span className="text-hallpass-black-dark text-lg font-bold px-2 py-1">black-dark</span>
+<span className="bg-hallpass-black-dark text-hallpass-on-black-dark font-medium px-2 py-1">full text-hallpass-on-black-dark</span>
+<span className="bg-hallpass-black-dark/75 text-hallpass-on-black-dark font-medium px-2 py-1">mostly text-hallpass-on-black-dark</span>
+<span className="bg-hallpass-black-dark/50 text-hallpass-black-dark font-medium px-2 py-1">half text-hallpass-black-dark</span>
+<span className="bg-hallpass-black-dark/25 text-hallpass-black-dark font-medium px-2 py-1">quarter text-hallpass-black-dark</span>
+<span className="bg-hallpass-black-dark/10 text-hallpass-black-dark font-medium px-2 py-1">minimal text-hallpass-black-dark</span>
+<span className="text-hallpass-white-light text-lg font-bold px-2 py-1">white-light</span>
+<span className="bg-hallpass-white-light text-hallpass-on-white-light font-medium px-2 py-1">full text-hallpass-on-white-light</span>
+<span className="bg-hallpass-white-light/75 text-hallpass-on-white-light font-medium px-2 py-1">mostly text-hallpass-on-white-light</span>
+<span className="bg-hallpass-white-light/50 text-hallpass-white-light font-medium px-2 py-1">half text-hallpass-white-light</span>
+<span className="bg-hallpass-white-light/25 text-hallpass-white-light font-medium px-2 py-1">quarter text-hallpass-white-light</span>
+<span className="bg-hallpass-white-light/10 text-hallpass-white-light font-medium px-2 py-1">minimal text-hallpass-white-light</span>
+<span className="text-hallpass-white text-lg font-bold px-2 py-1">white</span>
+<span className="bg-hallpass-white text-hallpass-on-white font-medium px-2 py-1">full text-hallpass-on-white</span>
+<span className="bg-hallpass-white/75 text-hallpass-on-white font-medium px-2 py-1">mostly text-hallpass-on-white</span>
+<span className="bg-hallpass-white/50 text-hallpass-white font-medium px-2 py-1">half text-hallpass-white</span>
+<span className="bg-hallpass-white/25 text-hallpass-white font-medium px-2 py-1">quarter text-hallpass-white</span>
+<span className="bg-hallpass-white/10 text-hallpass-white font-medium px-2 py-1">minimal text-hallpass-white</span>
+<span className="text-hallpass-white-dark text-lg font-bold px-2 py-1">white-dark</span>
+<span className="bg-hallpass-white-dark text-hallpass-on-white-dark font-medium px-2 py-1">full text-hallpass-on-white-dark</span>
+<span className="bg-hallpass-white-dark/75 text-hallpass-on-white-dark font-medium px-2 py-1">mostly text-hallpass-on-white-dark</span>
+<span className="bg-hallpass-white-dark/50 text-hallpass-white-dark font-medium px-2 py-1">half text-hallpass-white-dark</span>
+<span className="bg-hallpass-white-dark/25 text-hallpass-white-dark font-medium px-2 py-1">quarter text-hallpass-white-dark</span>
+<span className="bg-hallpass-white-dark/10 text-hallpass-white-dark font-medium px-2 py-1">minimal text-hallpass-white-dark</span>
+<span className="text-hallpass-neutral-light text-lg font-bold px-2 py-1">neutral-light</span>
+<span className="bg-hallpass-neutral-light text-hallpass-on-neutral-light font-medium px-2 py-1">full text-hallpass-on-neutral-light</span>
+<span className="bg-hallpass-neutral-light/75 text-hallpass-on-neutral-light font-medium px-2 py-1">mostly text-hallpass-on-neutral-light</span>
+<span className="bg-hallpass-neutral-light/50 text-hallpass-neutral-light font-medium px-2 py-1">half text-hallpass-neutral-light</span>
+<span className="bg-hallpass-neutral-light/25 text-hallpass-neutral-light font-medium px-2 py-1">quarter text-hallpass-neutral-light</span>
+<span className="bg-hallpass-neutral-light/10 text-hallpass-neutral-light font-medium px-2 py-1">minimal text-hallpass-neutral-light</span>
+<span className="text-hallpass-neutral text-lg font-bold px-2 py-1">neutral</span>
+<span className="bg-hallpass-neutral text-hallpass-on-neutral font-medium px-2 py-1">full text-hallpass-on-neutral</span>
+<span className="bg-hallpass-neutral/75 text-hallpass-on-neutral font-medium px-2 py-1">mostly text-hallpass-on-neutral</span>
+<span className="bg-hallpass-neutral/50 text-hallpass-neutral font-medium px-2 py-1">half text-hallpass-neutral</span>
+<span className="bg-hallpass-neutral/25 text-hallpass-neutral font-medium px-2 py-1">quarter text-hallpass-neutral</span>
+<span className="bg-hallpass-neutral/10 text-hallpass-neutral font-medium px-2 py-1">minimal text-hallpass-neutral</span>
+<span className="text-hallpass-neutral-dark text-lg font-bold px-2 py-1">neutral-dark</span>
+<span className="bg-hallpass-neutral-dark text-hallpass-on-neutral-dark font-medium px-2 py-1">full text-hallpass-on-neutral-dark</span>
+<span className="bg-hallpass-neutral-dark/75 text-hallpass-on-neutral-dark font-medium px-2 py-1">mostly text-hallpass-on-neutral-dark</span>
+<span className="bg-hallpass-neutral-dark/50 text-hallpass-neutral-dark font-medium px-2 py-1">half text-hallpass-neutral-dark</span>
+<span className="bg-hallpass-neutral-dark/25 text-hallpass-neutral-dark font-medium px-2 py-1">quarter text-hallpass-neutral-dark</span>
+<span className="bg-hallpass-neutral-dark/10 text-hallpass-neutral-dark font-medium px-2 py-1">minimal text-hallpass-neutral-dark</span>
+<span className="text-hallpass-primary-light text-lg font-bold px-2 py-1">primary-light</span>
+<span className="bg-hallpass-primary-light text-hallpass-on-primary-light font-medium px-2 py-1">full text-hallpass-on-primary-light</span>
+<span className="bg-hallpass-primary-light/75 text-hallpass-on-primary-light font-medium px-2 py-1">mostly text-hallpass-on-primary-light</span>
+<span className="bg-hallpass-primary-light/50 text-hallpass-primary-light font-medium px-2 py-1">half text-hallpass-primary-light</span>
+<span className="bg-hallpass-primary-light/25 text-hallpass-primary-light font-medium px-2 py-1">quarter text-hallpass-primary-light</span>
+<span className="bg-hallpass-primary-light/10 text-hallpass-primary-light font-medium px-2 py-1">minimal text-hallpass-primary-light</span>
+<span className="text-hallpass-primary text-lg font-bold px-2 py-1">primary</span>
+<span className="bg-hallpass-primary text-hallpass-on-primary font-medium px-2 py-1">full text-hallpass-on-primary</span>
+<span className="bg-hallpass-primary/75 text-hallpass-on-primary font-medium px-2 py-1">mostly text-hallpass-on-primary</span>
+<span className="bg-hallpass-primary/50 text-hallpass-primary font-medium px-2 py-1">half text-hallpass-primary</span>
+<span className="bg-hallpass-primary/25 text-hallpass-primary font-medium px-2 py-1">quarter text-hallpass-primary</span>
+<span className="bg-hallpass-primary/10 text-hallpass-primary font-medium px-2 py-1">minimal text-hallpass-primary</span>
+<span className="text-hallpass-primary-dark text-lg font-bold px-2 py-1">primary-dark</span>
+<span className="bg-hallpass-primary-dark text-hallpass-on-primary-dark font-medium px-2 py-1">full text-hallpass-on-primary-dark</span>
+<span className="bg-hallpass-primary-dark/75 text-hallpass-on-primary-dark font-medium px-2 py-1">mostly text-hallpass-on-primary-dark</span>
+<span className="bg-hallpass-primary-dark/50 text-hallpass-primary-dark font-medium px-2 py-1">half text-hallpass-primary-dark</span>
+<span className="bg-hallpass-primary-dark/25 text-hallpass-primary-dark font-medium px-2 py-1">quarter text-hallpass-primary-dark</span>
+<span className="bg-hallpass-primary-dark/10 text-hallpass-primary-dark font-medium px-2 py-1">minimal text-hallpass-primary-dark</span>
+<span className="text-hallpass-secondary-light text-lg font-bold px-2 py-1">secondary-light</span>
+<span className="bg-hallpass-secondary-light text-hallpass-on-secondary-light font-medium px-2 py-1">full text-hallpass-on-secondary-light</span>
+<span className="bg-hallpass-secondary-light/75 text-hallpass-on-secondary-light font-medium px-2 py-1">mostly text-hallpass-on-secondary-light</span>
+<span className="bg-hallpass-secondary-light/50 text-hallpass-secondary-light font-medium px-2 py-1">half text-hallpass-secondary-light</span>
+<span className="bg-hallpass-secondary-light/25 text-hallpass-secondary-light font-medium px-2 py-1">quarter text-hallpass-secondary-light</span>
+<span className="bg-hallpass-secondary-light/10 text-hallpass-secondary-light font-medium px-2 py-1">minimal text-hallpass-secondary-light</span>
+<span className="text-hallpass-secondary text-lg font-bold px-2 py-1">secondary</span>
+<span className="bg-hallpass-secondary text-hallpass-on-secondary font-medium px-2 py-1">full text-hallpass-on-secondary</span>
+<span className="bg-hallpass-secondary/75 text-hallpass-on-secondary font-medium px-2 py-1">mostly text-hallpass-on-secondary</span>
+<span className="bg-hallpass-secondary/50 text-hallpass-secondary font-medium px-2 py-1">half text-hallpass-secondary</span>
+<span className="bg-hallpass-secondary/25 text-hallpass-secondary font-medium px-2 py-1">quarter text-hallpass-secondary</span>
+<span className="bg-hallpass-secondary/10 text-hallpass-secondary font-medium px-2 py-1">minimal text-hallpass-secondary</span>
+<span className="text-hallpass-secondary-dark text-lg font-bold px-2 py-1">secondary-dark</span>
+<span className="bg-hallpass-secondary-dark text-hallpass-on-secondary-dark font-medium px-2 py-1">full text-hallpass-on-secondary-dark</span>
+<span className="bg-hallpass-secondary-dark/75 text-hallpass-on-secondary-dark font-medium px-2 py-1">mostly text-hallpass-on-secondary-dark</span>
+<span className="bg-hallpass-secondary-dark/50 text-hallpass-secondary-dark font-medium px-2 py-1">half text-hallpass-secondary-dark</span>
+<span className="bg-hallpass-secondary-dark/25 text-hallpass-secondary-dark font-medium px-2 py-1">quarter text-hallpass-secondary-dark</span>
+<span className="bg-hallpass-secondary-dark/10 text-hallpass-secondary-dark font-medium px-2 py-1">minimal text-hallpass-secondary-dark</span>
+<span className="text-hallpass-error-light text-lg font-bold px-2 py-1">error-light</span>
+<span className="bg-hallpass-error-light text-hallpass-on-error-light font-medium px-2 py-1">full text-hallpass-on-error-light</span>
+<span className="bg-hallpass-error-light/75 text-hallpass-on-error-light font-medium px-2 py-1">mostly text-hallpass-on-error-light</span>
+<span className="bg-hallpass-error-light/50 text-hallpass-error-light font-medium px-2 py-1">half text-hallpass-error-light</span>
+<span className="bg-hallpass-error-light/25 text-hallpass-error-light font-medium px-2 py-1">quarter text-hallpass-error-light</span>
+<span className="bg-hallpass-error-light/10 text-hallpass-error-light font-medium px-2 py-1">minimal text-hallpass-error-light</span>
+<span className="text-hallpass-error text-lg font-bold px-2 py-1">error</span>
+<span className="bg-hallpass-error text-hallpass-on-error font-medium px-2 py-1">full text-hallpass-on-error</span>
+<span className="bg-hallpass-error/75 text-hallpass-on-error font-medium px-2 py-1">mostly text-hallpass-on-error</span>
+<span className="bg-hallpass-error/50 text-hallpass-error font-medium px-2 py-1">half text-hallpass-error</span>
+<span className="bg-hallpass-error/25 text-hallpass-error font-medium px-2 py-1">quarter text-hallpass-error</span>
+<span className="bg-hallpass-error/10 text-hallpass-error font-medium px-2 py-1">minimal text-hallpass-error</span>
+<span className="text-hallpass-error-dark text-lg font-bold px-2 py-1">error-dark</span>
+<span className="bg-hallpass-error-dark text-hallpass-on-error-dark font-medium px-2 py-1">full text-hallpass-on-error-dark</span>
+<span className="bg-hallpass-error-dark/75 text-hallpass-on-error-dark font-medium px-2 py-1">mostly text-hallpass-on-error-dark</span>
+<span className="bg-hallpass-error-dark/50 text-hallpass-error-dark font-medium px-2 py-1">half text-hallpass-error-dark</span>
+<span className="bg-hallpass-error-dark/25 text-hallpass-error-dark font-medium px-2 py-1">quarter text-hallpass-error-dark</span>
+<span className="bg-hallpass-error-dark/10 text-hallpass-error-dark font-medium px-2 py-1">minimal text-hallpass-error-dark</span>
 </div>
 </div>
 </details>
@@ -2894,6 +3012,260 @@ return (
   Velit eiusmod non sit aliquip. Commodo magna id proident ad anim. Mollit exercitation nisi amet anim sint esse consectetur incididunt nisi. Ullamco laboris nisi irure ullamco esse ipsum adipisicing dolor proident aute dolor. Aliquip nisi do ea elit mollit ea amet aliqua ad. Incididunt ullamco exercitation laborum minim voluptate commodo ea laboris amet Lorem do. In mollit nostrud esse anim nulla ut veniam occaecat nisi deserunt sit cillum voluptate tempor.
   </div>
 </AySection>
+</div>
+</details>
+<details className="view-area">
+<summary className="cursor-pointer font-bold text-xl">Buttons</summary>
+<div className="my-4 pl-4 border-l-8 border-slate-300">
+
+<details className="my-6">
+<summary className="cursor-pointer font-bold text-lg">Button Base</summary>
+<div className="my-4 px-4 border border-slate-200">
+
+<div className="grid grid-cols-4 gap-x-4">
+<div className="text-center">
+      <ButtonBase size="thin">btn-thin</ButtonBase>
+    </div>
+<div className="text-center">
+      <ButtonBase size="sm">btn-sm</ButtonBase>
+    </div>
+<div className="text-center">
+      <ButtonBase size="md">btn-md</ButtonBase>
+    </div>
+<div className="text-center">
+      <ButtonBase size="lg">btn-lg</ButtonBase>
+    </div>
+</div>
+</div>
+</details>
+<details className="my-6">
+<summary className="cursor-pointer font-bold text-lg">Button</summary>
+<div className="my-4 px-4 border border-slate-200">
+
+<div className="font-bold text-lg">Hover none</div>
+<div className="mb-4 grid grid-cols-4 gap-x-4">
+<div className="text-center">
+        <Button size="thin" hover="none" color="neutral">btn-thin</Button>
+      </div>
+<div className="text-center">
+        <Button size="sm" hover="none" color="primary">btn-sm</Button>
+      </div>
+<div className="text-center">
+        <Button size="md" hover="none" color="secondary">btn-md</Button>
+      </div>
+<div className="text-center">
+        <Button size="lg" hover="none" color="error">btn-lg</Button>
+      </div>
+</div>
+<div className="font-bold text-lg">Hover bottom</div>
+<div className="mb-4 grid grid-cols-4 gap-x-4">
+<div className="text-center">
+        <Button size="thin" hover="bottom" color="neutral">btn-thin</Button>
+      </div>
+<div className="text-center">
+        <Button size="sm" hover="bottom" color="primary">btn-sm</Button>
+      </div>
+<div className="text-center">
+        <Button size="md" hover="bottom" color="secondary">btn-md</Button>
+      </div>
+<div className="text-center">
+        <Button size="lg" hover="bottom" color="error">btn-lg</Button>
+      </div>
+</div>
+<div className="font-bold text-lg">Hover bg</div>
+<div className="mb-4 grid grid-cols-4 gap-x-4">
+<div className="text-center">
+        <Button size="thin" hover="bg" color="neutral">btn-thin</Button>
+      </div>
+<div className="text-center">
+        <Button size="sm" hover="bg" color="primary">btn-sm</Button>
+      </div>
+<div className="text-center">
+        <Button size="md" hover="bg" color="secondary">btn-md</Button>
+      </div>
+<div className="text-center">
+        <Button size="lg" hover="bg" color="error">btn-lg</Button>
+      </div>
+</div>
+<div className="font-bold text-lg">Hover grow</div>
+<div className="mb-4 grid grid-cols-4 gap-x-4">
+<div className="text-center">
+        <Button size="thin" hover="grow" color="neutral">btn-thin</Button>
+      </div>
+<div className="text-center">
+        <Button size="sm" hover="grow" color="primary">btn-sm</Button>
+      </div>
+<div className="text-center">
+        <Button size="md" hover="grow" color="secondary">btn-md</Button>
+      </div>
+<div className="text-center">
+        <Button size="lg" hover="grow" color="error">btn-lg</Button>
+      </div>
+</div>
+</div>
+</details>
+<details className="my-6">
+<summary className="cursor-pointer font-bold text-lg">Button Solid</summary>
+<div className="my-4 px-4 border border-slate-200">
+
+<div className="font-bold text-lg">BLACK</div>
+<div className="mb-4 grid grid-cols-5 gap-x-4">
+<div className="text-center">
+        <ButtonSolid size="thin" intensity="light" color="black">btn-thin-light</ButtonSolid>
+      </div>
+<div className="text-center">
+        <ButtonSolid size="sm"  color="black">btn-sm-default</ButtonSolid>
+      </div>
+<div className="text-center">
+        <ButtonSolid size="md" intensity="dark" color="black">btn-md-dark</ButtonSolid>
+      </div>
+<div className="text-center">
+        <ButtonSolid size="lg" intensity="light" color="black">btn-lg-light</ButtonSolid>
+      </div>
+</div>
+<div className="font-bold text-lg">NEUTRAL</div>
+<div className="mb-4 grid grid-cols-5 gap-x-4">
+<div className="text-center">
+        <ButtonSolid size="thin" intensity="light" color="neutral">btn-thin-light</ButtonSolid>
+      </div>
+<div className="text-center">
+        <ButtonSolid size="sm"  color="neutral">btn-sm-default</ButtonSolid>
+      </div>
+<div className="text-center">
+        <ButtonSolid size="md" intensity="dark" color="neutral">btn-md-dark</ButtonSolid>
+      </div>
+<div className="text-center">
+        <ButtonSolid size="lg" intensity="light" color="neutral">btn-lg-light</ButtonSolid>
+      </div>
+</div>
+<div className="font-bold text-lg">PRIMARY</div>
+<div className="mb-4 grid grid-cols-5 gap-x-4">
+<div className="text-center">
+        <ButtonSolid size="thin" intensity="light" color="primary">btn-thin-light</ButtonSolid>
+      </div>
+<div className="text-center">
+        <ButtonSolid size="sm"  color="primary">btn-sm-default</ButtonSolid>
+      </div>
+<div className="text-center">
+        <ButtonSolid size="md" intensity="dark" color="primary">btn-md-dark</ButtonSolid>
+      </div>
+<div className="text-center">
+        <ButtonSolid size="lg" intensity="light" color="primary">btn-lg-light</ButtonSolid>
+      </div>
+</div>
+<div className="font-bold text-lg">SECONDARY</div>
+<div className="mb-4 grid grid-cols-5 gap-x-4">
+<div className="text-center">
+        <ButtonSolid size="thin" intensity="light" color="secondary">btn-thin-light</ButtonSolid>
+      </div>
+<div className="text-center">
+        <ButtonSolid size="sm"  color="secondary">btn-sm-default</ButtonSolid>
+      </div>
+<div className="text-center">
+        <ButtonSolid size="md" intensity="dark" color="secondary">btn-md-dark</ButtonSolid>
+      </div>
+<div className="text-center">
+        <ButtonSolid size="lg" intensity="light" color="secondary">btn-lg-light</ButtonSolid>
+      </div>
+</div>
+<div className="font-bold text-lg">ERROR</div>
+<div className="mb-4 grid grid-cols-5 gap-x-4">
+<div className="text-center">
+        <ButtonSolid size="thin" intensity="light" color="error">btn-thin-light</ButtonSolid>
+      </div>
+<div className="text-center">
+        <ButtonSolid size="sm"  color="error">btn-sm-default</ButtonSolid>
+      </div>
+<div className="text-center">
+        <ButtonSolid size="md" intensity="dark" color="error">btn-md-dark</ButtonSolid>
+      </div>
+<div className="text-center">
+        <ButtonSolid size="lg" intensity="light" color="error">btn-lg-light</ButtonSolid>
+      </div>
+</div>
+</div>
+</details>
+<details className="my-6">
+<summary className="cursor-pointer font-bold text-lg">Button Outline</summary>
+<div className="my-4 px-4 border border-slate-200">
+
+<div className="font-bold text-lg">BLACK</div>
+<div className="mb-4 grid grid-cols-5 gap-x-4">
+<div className="text-center">
+        <ButtonOutline size="thin" intensity="light" color="black" bg="transparent">btn-thin-light</ButtonOutline>
+      </div>
+<div className="text-center">
+        <ButtonOutline size="sm"  color="black" bg="background">btn-sm-default</ButtonOutline>
+      </div>
+<div className="text-center">
+        <ButtonOutline size="md" intensity="dark" color="black" bg="surface">btn-md-dark</ButtonOutline>
+      </div>
+<div className="text-center">
+        <ButtonOutline size="lg" intensity="light" color="black" bg="transparent">btn-lg-light</ButtonOutline>
+      </div>
+</div>
+<div className="font-bold text-lg">NEUTRAL</div>
+<div className="mb-4 grid grid-cols-5 gap-x-4">
+<div className="text-center">
+        <ButtonOutline size="thin" intensity="light" color="neutral" bg="transparent">btn-thin-light</ButtonOutline>
+      </div>
+<div className="text-center">
+        <ButtonOutline size="sm"  color="neutral" bg="background">btn-sm-default</ButtonOutline>
+      </div>
+<div className="text-center">
+        <ButtonOutline size="md" intensity="dark" color="neutral" bg="surface">btn-md-dark</ButtonOutline>
+      </div>
+<div className="text-center">
+        <ButtonOutline size="lg" intensity="light" color="neutral" bg="transparent">btn-lg-light</ButtonOutline>
+      </div>
+</div>
+<div className="font-bold text-lg">PRIMARY</div>
+<div className="mb-4 grid grid-cols-5 gap-x-4">
+<div className="text-center">
+        <ButtonOutline size="thin" intensity="light" color="primary" bg="transparent">btn-thin-light</ButtonOutline>
+      </div>
+<div className="text-center">
+        <ButtonOutline size="sm"  color="primary" bg="background">btn-sm-default</ButtonOutline>
+      </div>
+<div className="text-center">
+        <ButtonOutline size="md" intensity="dark" color="primary" bg="surface">btn-md-dark</ButtonOutline>
+      </div>
+<div className="text-center">
+        <ButtonOutline size="lg" intensity="light" color="primary" bg="transparent">btn-lg-light</ButtonOutline>
+      </div>
+</div>
+<div className="font-bold text-lg">SECONDARY</div>
+<div className="mb-4 grid grid-cols-5 gap-x-4">
+<div className="text-center">
+        <ButtonOutline size="thin" intensity="light" color="secondary" bg="transparent">btn-thin-light</ButtonOutline>
+      </div>
+<div className="text-center">
+        <ButtonOutline size="sm"  color="secondary" bg="background">btn-sm-default</ButtonOutline>
+      </div>
+<div className="text-center">
+        <ButtonOutline size="md" intensity="dark" color="secondary" bg="surface">btn-md-dark</ButtonOutline>
+      </div>
+<div className="text-center">
+        <ButtonOutline size="lg" intensity="light" color="secondary" bg="transparent">btn-lg-light</ButtonOutline>
+      </div>
+</div>
+<div className="font-bold text-lg">ERROR</div>
+<div className="mb-4 grid grid-cols-5 gap-x-4">
+<div className="text-center">
+        <ButtonOutline size="thin" intensity="light" color="error" bg="transparent">btn-thin-light</ButtonOutline>
+      </div>
+<div className="text-center">
+        <ButtonOutline size="sm"  color="error" bg="background">btn-sm-default</ButtonOutline>
+      </div>
+<div className="text-center">
+        <ButtonOutline size="md" intensity="dark" color="error" bg="surface">btn-md-dark</ButtonOutline>
+      </div>
+<div className="text-center">
+        <ButtonOutline size="lg" intensity="light" color="error" bg="transparent">btn-lg-light</ButtonOutline>
+      </div>
+</div>
+</div>
+</details>
 </div>
 </details>
 </div>

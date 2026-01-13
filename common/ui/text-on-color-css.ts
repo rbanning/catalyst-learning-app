@@ -1,12 +1,15 @@
 import { opacitySwitch, intensitySwitch } from "./css-utils";
-import { ThemeColorBasic, ThemeColorBlackWhite, ThemeColorIntensity, ThemeColorOpacity } from "../styles";
+import { ThemeColorFull, ThemeColorIntensity, ThemeColorOpacity } from "../styles";
+import { assertExhaustive } from "../misc";
 
-export function textOnColorCss(color: ThemeColorBasic | ThemeColorBlackWhite, intensity?: ThemeColorIntensity, opacity?: ThemeColorOpacity) {
+export function textOnColorCss(color: ThemeColorFull, intensity?: ThemeColorIntensity, opacity?: ThemeColorOpacity) {
   intensity ??= 'DEFAULT';
   opacity ??= 'full';
 
 
   switch(color) {
+    case 'background':
+      return 'text-black';
     case 'white':
       return opacitySwitch(opacity, 
         intensitySwitch(intensity,
@@ -120,26 +123,48 @@ export function textOnColorCss(color: ThemeColorBasic | ThemeColorBlackWhite, in
     case 'error':
       return opacitySwitch(opacity, 
         intensitySwitch(intensity,
-          'text-hallpass-on-error contrast-more:text-hallpass-red-dark',
-          'text-hallpass-on-error-light contrast-more:text-hallpass-red-dark',
-          'text-hallpass-on-error-dark contrast-more:text-hallpass-red-dark'),
+          'text-hallpass-on-error contrast-more:text-hallpass-on-error-dark',
+          'text-hallpass-on-error-light contrast-more:text-hallpass-on-error-dark',
+          'text-hallpass-on-error-dark contrast-more:text-hallpass-on-error-dark'),
         intensitySwitch(intensity,
-          'text-hallpass-on-error/75 contrast-more:text-hallpass-red-dark',
-          'text-hallpass-on-error-light/75 contrast-more:text-hallpass-red-dark',
-          'text-hallpass-on-error-dark/75 contrast-more:text-hallpass-red-dark'),
+          'text-hallpass-on-error/75 contrast-more:text-hallpass-on-error-dark',
+          'text-hallpass-on-error-light/75 contrast-more:text-hallpass-on-error-dark',
+          'text-hallpass-on-error-dark/75 contrast-more:text-hallpass-on-error-dark'),
         intensitySwitch(intensity,
-          'text-hallpass-on-error/50 contrast-more:text-hallpass-red-dark',
-          'text-hallpass-on-error-light/50 contrast-more:text-hallpass-red-dark',
-          'text-hallpass-on-error-dark/50 contrast-more:text-hallpass-red-dark'),
+          'text-hallpass-on-error/50 contrast-more:text-hallpass-on-error-dark',
+          'text-hallpass-on-error-light/50 contrast-more:text-hallpass-on-error-dark',
+          'text-hallpass-on-error-dark/50 contrast-more:text-hallpass-on-error-dark'),
         intensitySwitch(intensity,
-          'text-hallpass-on-error/25 contrast-more:text-hallpass-red-dark',
-          'text-hallpass-on-error-light/25 contrast-more:text-hallpass-red-dark',
-          'text-hallpass-on-error-dark/25 contrast-more:text-hallpass-red-dark'),
+          'text-hallpass-on-error/25 contrast-more:text-hallpass-on-error-dark',
+          'text-hallpass-on-error-light/25 contrast-more:text-hallpass-on-error-dark',
+          'text-hallpass-on-error-dark/25 contrast-more:text-hallpass-on-error-dark'),
         intensitySwitch(intensity,
-          'text-hallpass-on-error/10 contrast-more:text-hallpass-red-dark',
-          'text-hallpass-on-error-light/10 contrast-more:text-hallpass-red-dark',
-          'text-hallpass-on-error-dark/10 contrast-more:text-hallpass-red-dark'));
+          'text-hallpass-on-error/10 contrast-more:text-hallpass-on-error-dark',
+          'text-hallpass-on-error-light/10 contrast-more:text-hallpass-on-error-dark',
+          'text-hallpass-on-error-dark/10 contrast-more:text-hallpass-on-error-dark'));
+    case 'surface':
+      return opacitySwitch(opacity, 
+        intensitySwitch(intensity,
+          'text-hallpass-on-surface contrast-more:text-black',
+          'text-hallpass-on-surface-light contrast-more:text-black',
+          'text-hallpass-on-surface-dark contrast-more:text-black'),
+        intensitySwitch(intensity,
+          'text-hallpass-on-surface/75 contrast-more:text-black',
+          'text-hallpass-on-surface-light/75 contrast-more:text-black',
+          'text-hallpass-on-surface-dark/75 contrast-more:text-black'),
+        intensitySwitch(intensity,
+          'text-hallpass-on-surface/50 contrast-more:text-black',
+          'text-hallpass-on-surface-light/50 contrast-more:text-black',
+          'text-hallpass-on-surface-dark/50 contrast-more:text-black'),
+        intensitySwitch(intensity,
+          'text-hallpass-on-surface/25 contrast-more:text-black',
+          'text-hallpass-on-surface-light/25 contrast-more:text-black',
+          'text-hallpass-on-surface-dark/25 contrast-more:text-black'),
+        intensitySwitch(intensity,
+          'text-hallpass-on-surface/10 contrast-more:text-black',
+          'text-hallpass-on-surface-light/10 contrast-more:text-black',
+          'text-hallpass-on-surface-dark/10 contrast-more:text-black'));
     default:
-      throw new Error(`Unsupported text color: ${color}`);
+      assertExhaustive(color);
   }
 }

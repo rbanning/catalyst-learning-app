@@ -13,14 +13,26 @@ function buildThemeComponent(name: string, filename: string) {
   const SURFACE = 'surface';
   const colors = ['neutral', 'primary', 'secondary', 'error'];
   const variants = ['light', DEFAULT, 'dark'];
+  const opacityList = ['full', 'mostly', 'half', 'quarter', 'minimal'] as const;
+  const opacityRec: Record<typeof opacityList[number], string> = {
+    'full': '',
+    'mostly': '/75',
+    'half': '/50',
+    'quarter': '/25',
+    'minimal': '/10'
+  }
   const textSizes = ['text-sm', 'text-base', 'text-lg', 'text-xl'];
   const fontWeights = ['font-thin', 'font-light', 'font-normal', 'font-semibold', 'font-bold', 'font-black'];
   const feedbacks = ['success', 'warning', 'invalid'];
   const typefaces = ['font-sans', 'font-serif', 'font-mono', 'font-brand'];
   const headings = ['h1', 'h2', 'h3', 'h4'];
+  const buttonSizes = ['thin', 'sm', 'md', 'lg'];
+  const hoverTypes = ['none', 'bottom', 'bg', 'grow'];
 
   const output = [
+    ``,
     `import { AySection } from "@/ui/base-ui/server";`,
+    `import { ButtonBase, Button, ButtonSolid, ButtonOutline } from "@/ui/base-ui/client";`,
     ``,
     `export function ${name}() {`,
     `return (`,
@@ -99,6 +111,30 @@ function buildThemeComponent(name: string, filename: string) {
 
     output.push(details.close()); // end of the specific color
   }
+
+    // Massive
+  output.push(details.open('All Color Combinations', { secondary: true, margin: 'minimum', border: 'box' }));
+
+    //all color combinations
+    output.push(`<div className="flex flex-wrap gap-x-4 gap-y-2">`);    
+    for (const color of ['black', 'white', ...colors]) {
+      for (const variant of variants) {
+        const variantColor = color + (variant === DEFAULT ? '' : `-${variant}`);
+        output.push(`<span className="text-hallpass-${variantColor} text-lg font-bold px-2 py-1">${variantColor}</span>`);      
+        for (const opacity of opacityList) {
+          const bg = variantColor + opacityRec[opacity];
+          const text = opacity === 'mostly' || opacity === 'full'
+            ? `text-hallpass-on-${variantColor}`
+            : `text-hallpass-${variantColor}`;
+          output.push(`<span className="bg-hallpass-${bg} ${text} font-medium px-2 py-1">${opacity} ${text}</span>`);      
+        }
+      }
+    }
+    output.push(`</div>`); //end all color combinations
+
+
+  output.push(details.close()); //massive
+
 
   // FEEDBACK
   output.push(details.open('Feedback', { secondary: true, margin: 'minimum', border: 'box' }));
@@ -240,6 +276,94 @@ function buildThemeComponent(name: string, filename: string) {
   output.push(details.close()); //sections
   //#endregion
 
+
+  //#region BUTTONS 
+
+  output.push(details.open("Buttons", { container: true }));
+
+  //Button Base
+  output.push(details.open('Button Base', { secondary: true, margin: 'minimum', border: 'box' }));
+
+  output.push(`<div className="grid grid-cols-${buttonSizes.length} gap-x-4">`);
+  for (const size of buttonSizes) {
+    output.push(`<div className="text-center">
+      <ButtonBase size="${size}">btn-${size}</ButtonBase>
+    </div>`)
+  }
+  output.push(`</div>`);
+
+  output.push(details.close()); //button base
+
+
+  //Button
+  output.push(details.open('Button', { secondary: true, margin: 'minimum', border: 'box' }));
+
+  for (const hover of hoverTypes) {
+    output.push(`<div className="font-bold text-lg">Hover ${hover}</div>`);
+    output.push(`<div className="mb-4 grid grid-cols-${buttonSizes.length} gap-x-4">`);
+    let index = 0;
+    for (const size of buttonSizes) {
+      const color = index >= colors.length ? '' : colors[index];
+      index += 1;
+      output.push(`<div className="text-center">
+        <Button size="${size}" hover="${hover}" color="${color}">btn-${size}</Button>
+      </div>`)
+    }
+    output.push(`</div>`);
+  }
+
+  output.push(details.close()); //button
+
+
+  //Button Solid
+  output.push(details.open('Button Solid', { secondary: true, margin: 'minimum', border: 'box' }));
+
+  for (const color of ['black', ...colors]) {
+    output.push(`<div className="font-bold text-lg">${color.toUpperCase()}</div>`);
+    output.push(`<div className="mb-4 grid grid-cols-${colors.length+1} gap-x-4">`);
+    let index = 0;
+    for (const size of buttonSizes) {
+      const variant = variants[index % variants.length];
+      const variantAttr = variant === DEFAULT ? '' : `intensity="${variant}"`;
+      index += 1;
+      output.push(`<div className="text-center">
+        <ButtonSolid size="${size}" ${variantAttr} color="${color}">btn-${size}-${variant.toLocaleLowerCase()}</ButtonSolid>
+      </div>`)
+    }
+    output.push(`</div>`);
+  }
+
+  output.push(details.close()); //button solid
+
+
+
+  //Button Outline
+  output.push(details.open('Button Outline', { secondary: true, margin: 'minimum', border: 'box' }));
+
+  for (const color of ['black', ...colors]) {
+    output.push(`<div className="font-bold text-lg">${color.toUpperCase()}</div>`);
+    output.push(`<div className="mb-4 grid grid-cols-${colors.length+1} gap-x-4">`);
+    let index = 0;
+    for (const size of buttonSizes) {
+      const variant = variants[index % variants.length]; 
+      const variantAttr = variant === DEFAULT ? '' : `intensity="${variant}"`;
+      const bg = ['transparent', 'background', 'surface'][index % 3];
+      index += 1;
+      output.push(`<div className="text-center">
+        <ButtonOutline size="${size}" ${variantAttr} color="${color}" bg="${bg}">btn-${size}-${variant.toLocaleLowerCase()}</ButtonOutline>
+      </div>`)
+    }
+    output.push(`</div>`);
+  }
+
+  output.push(details.close()); //button outline
+
+
+
+
+  output.push(details.close()); //buttons
+
+  //#endregion (buttons)
 
   output.push('</div>');
   output.push(');');

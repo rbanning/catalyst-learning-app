@@ -1,0 +1,46 @@
+/* 
+NOTE: this applies to the ButtonBase component @/ui/base-ui/client/buttons/button-base 
+      and replaces the use of module css (button-base.module.css)
+*/
+
+
+/* general styles */
+.button-base {
+  @apply relative z-0 min-w-max overflow-hidden
+     inline-flex items-center gap-1
+     outline-none ring-0 appearance-none
+     rounded
+     focus:ring-1
+     transition-all
+     disabled:cursor-not-allowed disabled:opacity-30;
+
+  /* size: note: can be omitted */
+  &._sm {
+    @apply text-sm;
+  }
+  &._thin {
+    @apply text-sm px-1 py-0;
+  }
+  &._md {
+    @apply text-base;
+  }
+  &._lg {
+    @apply text-xl;
+  }
+
+  /* ripple effect: see customize-animations */
+  &::after {
+    @apply absolute w-[50%] h-[50%]
+      top-1/4 left-1/4 
+      rounded-full bg-slate-100/70 content-['']
+      scale-0;
+  }  
+  &.active {
+    @apply animate-opposite-ripple;
+    /* animation: opposite-ripple 600ms ease-in-out; */
+    &::after {
+      @apply animate-ripple;
+      /* animation: ripple 600ms ease-in-out; */
+    }
+  }
+}

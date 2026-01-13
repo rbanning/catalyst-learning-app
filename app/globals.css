@@ -8,8 +8,11 @@
 @import "../tailwind/customize-colors.css";
 @import "../tailwind/customize-colors-extra.css";
 @import "../tailwind/customize-fonts.css";
-/* @import "../tailwind//customize-animations.css"; */
+@import "../tailwind//customize-animations.css";
 @import "../tailwind//customize-components.css";
+
+/* global component definitions */
+@import "../tailwind/global-component.css";
 
 /* common css classes */
 @import "../tailwind/common.css";
