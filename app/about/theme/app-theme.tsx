@@ -3,872 +3,946 @@ import { AySection } from "@/ui/base-ui/server";
 export function AppTheme() {
 return (
 <div>
-<details className="my-12 view-area"><summary className="cursor-pointer font-bold text-xl">Colors</summary><div className="my-4 pl-4 border-l-8 border-slate-300">
-  <details className="my-6">
-    <summary className="cursor-pointer text-lg font-bold text-hallpass-neutral">Neutral</summary>
-    <div className="p-8 border">
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-sm text-hallpass-neutral-light">
-        <span className="font-thin">light sm thin</span>
-        <span className="font-light">light sm light</span>
-        <span className="font-normal">light sm normal</span>
-        <span className="font-semibold">light sm semibold</span>
-        <span className="font-bold">light sm bold</span>
-        <span className="font-black">light sm black</span>
-      </div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-base text-hallpass-neutral-light">
-        <span className="font-thin">light base thin</span>
-        <span className="font-light">light base light</span>
-        <span className="font-normal">light base normal</span>
-        <span className="font-semibold">light base semibold</span>
-        <span className="font-bold">light base bold</span>
-        <span className="font-black">light base black</span>
-      </div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-lg text-hallpass-neutral-light">
-        <span className="font-thin">light lg thin</span>
-        <span className="font-light">light lg light</span>
-        <span className="font-normal">light lg normal</span>
-        <span className="font-semibold">light lg semibold</span>
-        <span className="font-bold">light lg bold</span>
-        <span className="font-black">light lg black</span>
-      </div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-xl text-hallpass-neutral-light">
-        <span className="font-thin">light xl thin</span>
-        <span className="font-light">light xl light</span>
-        <span className="font-normal">light xl normal</span>
-        <span className="font-semibold">light xl semibold</span>
-        <span className="font-bold">light xl bold</span>
-        <span className="font-black">light xl black</span>
-      </div>
-    <div className="my-2 w-full h-1 bg-slate-500"></div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-sm text-hallpass-neutral">
-        <span className="font-thin">Default sm thin</span>
-        <span className="font-light">Default sm light</span>
-        <span className="font-normal">Default sm normal</span>
-        <span className="font-semibold">Default sm semibold</span>
-        <span className="font-bold">Default sm bold</span>
-        <span className="font-black">Default sm black</span>
-      </div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-base text-hallpass-neutral">
-        <span className="font-thin">Default base thin</span>
-        <span className="font-light">Default base light</span>
-        <span className="font-normal">Default base normal</span>
-        <span className="font-semibold">Default base semibold</span>
-        <span className="font-bold">Default base bold</span>
-        <span className="font-black">Default base black</span>
-      </div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-lg text-hallpass-neutral">
-        <span className="font-thin">Default lg thin</span>
-        <span className="font-light">Default lg light</span>
-        <span className="font-normal">Default lg normal</span>
-        <span className="font-semibold">Default lg semibold</span>
-        <span className="font-bold">Default lg bold</span>
-        <span className="font-black">Default lg black</span>
-      </div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-xl text-hallpass-neutral">
-        <span className="font-thin">Default xl thin</span>
-        <span className="font-light">Default xl light</span>
-        <span className="font-normal">Default xl normal</span>
-        <span className="font-semibold">Default xl semibold</span>
-        <span className="font-bold">Default xl bold</span>
-        <span className="font-black">Default xl black</span>
-      </div>
-    <div className="my-2 w-full h-1 bg-slate-500"></div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-sm text-hallpass-neutral-dark">
-        <span className="font-thin">dark sm thin</span>
-        <span className="font-light">dark sm light</span>
-        <span className="font-normal">dark sm normal</span>
-        <span className="font-semibold">dark sm semibold</span>
-        <span className="font-bold">dark sm bold</span>
-        <span className="font-black">dark sm black</span>
-      </div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-base text-hallpass-neutral-dark">
-        <span className="font-thin">dark base thin</span>
-        <span className="font-light">dark base light</span>
-        <span className="font-normal">dark base normal</span>
-        <span className="font-semibold">dark base semibold</span>
-        <span className="font-bold">dark base bold</span>
-        <span className="font-black">dark base black</span>
-      </div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-lg text-hallpass-neutral-dark">
-        <span className="font-thin">dark lg thin</span>
-        <span className="font-light">dark lg light</span>
-        <span className="font-normal">dark lg normal</span>
-        <span className="font-semibold">dark lg semibold</span>
-        <span className="font-bold">dark lg bold</span>
-        <span className="font-black">dark lg black</span>
-      </div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-xl text-hallpass-neutral-dark">
-        <span className="font-thin">dark xl thin</span>
-        <span className="font-light">dark xl light</span>
-        <span className="font-normal">dark xl normal</span>
-        <span className="font-semibold">dark xl semibold</span>
-        <span className="font-bold">dark xl bold</span>
-        <span className="font-black">dark xl black</span>
-      </div>
-      <div className="grid grid-cols-3 gap-x-4">
-        <div className="p-4 bg-hallpass-surface-light">
-        <div className="text-lg font-bold text-black">light Surface</div>
-        <div className="flex flex-wrap items-center gap-x-4">
-<span className="text-sm text-hallpass-neutral-light">neutral light sm</span>
-<span className="text-base text-hallpass-neutral-light">neutral light base</span>
-<span className="text-lg text-hallpass-neutral-light">neutral light lg</span>
-<span className="text-xl text-hallpass-neutral-light">neutral light xl</span>
-<span className="text-sm text-hallpass-neutral">neutral Default sm</span>
-<span className="text-base text-hallpass-neutral">neutral Default base</span>
-<span className="text-lg text-hallpass-neutral">neutral Default lg</span>
-<span className="text-xl text-hallpass-neutral">neutral Default xl</span>
-<span className="text-sm text-hallpass-neutral-dark">neutral dark sm</span>
-<span className="text-base text-hallpass-neutral-dark">neutral dark base</span>
-<span className="text-lg text-hallpass-neutral-dark">neutral dark lg</span>
-<span className="text-xl text-hallpass-neutral-dark">neutral dark xl</span>
-        </div>
-        </div>
-        <div className="p-4 bg-hallpass-surface">
-        <div className="text-lg font-bold text-black">Default Surface</div>
-        <div className="flex flex-wrap items-center gap-x-4">
-<span className="text-sm text-hallpass-neutral-light">neutral light sm</span>
-<span className="text-base text-hallpass-neutral-light">neutral light base</span>
-<span className="text-lg text-hallpass-neutral-light">neutral light lg</span>
-<span className="text-xl text-hallpass-neutral-light">neutral light xl</span>
-<span className="text-sm text-hallpass-neutral">neutral Default sm</span>
-<span className="text-base text-hallpass-neutral">neutral Default base</span>
-<span className="text-lg text-hallpass-neutral">neutral Default lg</span>
-<span className="text-xl text-hallpass-neutral">neutral Default xl</span>
-<span className="text-sm text-hallpass-neutral-dark">neutral dark sm</span>
-<span className="text-base text-hallpass-neutral-dark">neutral dark base</span>
-<span className="text-lg text-hallpass-neutral-dark">neutral dark lg</span>
-<span className="text-xl text-hallpass-neutral-dark">neutral dark xl</span>
-        </div>
-        </div>
-        <div className="p-4 bg-hallpass-surface-dark">
-        <div className="text-lg font-bold text-black">dark Surface</div>
-        <div className="flex flex-wrap items-center gap-x-4">
-<span className="text-sm text-hallpass-neutral-light">neutral light sm</span>
-<span className="text-base text-hallpass-neutral-light">neutral light base</span>
-<span className="text-lg text-hallpass-neutral-light">neutral light lg</span>
-<span className="text-xl text-hallpass-neutral-light">neutral light xl</span>
-<span className="text-sm text-hallpass-neutral">neutral Default sm</span>
-<span className="text-base text-hallpass-neutral">neutral Default base</span>
-<span className="text-lg text-hallpass-neutral">neutral Default lg</span>
-<span className="text-xl text-hallpass-neutral">neutral Default xl</span>
-<span className="text-sm text-hallpass-neutral-dark">neutral dark sm</span>
-<span className="text-base text-hallpass-neutral-dark">neutral dark base</span>
-<span className="text-lg text-hallpass-neutral-dark">neutral dark lg</span>
-<span className="text-xl text-hallpass-neutral-dark">neutral dark xl</span>
-        </div>
-        </div>
-      </div>
-      <div className="grid grid-cols-3 gap-x-4">
-        <div className="p-4 bg-hallpass-neutral-light">
-        <div className="text-lg font-bold text-white">light neutral</div>
-        <div className="flex flex-wrap items-center gap-x-4">
-<span className="text-sm text-hallpass-on-neutral-light">neutral light sm</span>
-<span className="text-base text-hallpass-on-neutral-light">neutral light base</span>
-<span className="text-lg text-hallpass-on-neutral-light">neutral light lg</span>
-<span className="text-xl text-hallpass-on-neutral-light">neutral light xl</span>
-        </div>
-        </div>
-        <div className="p-4 bg-hallpass-neutral">
-        <div className="text-lg font-bold text-white">Default neutral</div>
-        <div className="flex flex-wrap items-center gap-x-4">
-<span className="text-sm text-hallpass-on-neutral">neutral Default sm</span>
-<span className="text-base text-hallpass-on-neutral">neutral Default base</span>
-<span className="text-lg text-hallpass-on-neutral">neutral Default lg</span>
-<span className="text-xl text-hallpass-on-neutral">neutral Default xl</span>
-        </div>
-        </div>
-        <div className="p-4 bg-hallpass-neutral-dark">
-        <div className="text-lg font-bold text-white">dark neutral</div>
-        <div className="flex flex-wrap items-center gap-x-4">
-<span className="text-sm text-hallpass-on-neutral-dark">neutral dark sm</span>
-<span className="text-base text-hallpass-on-neutral-dark">neutral dark base</span>
-<span className="text-lg text-hallpass-on-neutral-dark">neutral dark lg</span>
-<span className="text-xl text-hallpass-on-neutral-dark">neutral dark xl</span>
-        </div>
-        </div>
-      </div>
-      <div className="grid grid-cols-3 gap-x-4">
-        <div className="p-4 bg-hallpass-neutral-light/10">
-        <div className="text-lg font-bold text-black">light neutral</div>
-        <div className="flex flex-wrap items-center gap-x-4">
-<span className="text-sm font-medium text-hallpass-neutral-light">neutral light sm</span>
-<span className="text-base font-medium text-hallpass-neutral-light">neutral light base</span>
-<span className="text-lg font-medium text-hallpass-neutral-light">neutral light lg</span>
-<span className="text-xl font-medium text-hallpass-neutral-light">neutral light xl</span>
-        </div>
-        </div>
-        <div className="p-4 bg-hallpass-neutral/10">
-        <div className="text-lg font-bold text-black">Default neutral</div>
-        <div className="flex flex-wrap items-center gap-x-4">
-<span className="text-sm font-medium text-hallpass-neutral">neutral Default sm</span>
-<span className="text-base font-medium text-hallpass-neutral">neutral Default base</span>
-<span className="text-lg font-medium text-hallpass-neutral">neutral Default lg</span>
-<span className="text-xl font-medium text-hallpass-neutral">neutral Default xl</span>
-        </div>
-        </div>
-        <div className="p-4 bg-hallpass-neutral-dark/10">
-        <div className="text-lg font-bold text-black">dark neutral</div>
-        <div className="flex flex-wrap items-center gap-x-4">
-<span className="text-sm font-medium text-hallpass-neutral-dark">neutral dark sm</span>
-<span className="text-base font-medium text-hallpass-neutral-dark">neutral dark base</span>
-<span className="text-lg font-medium text-hallpass-neutral-dark">neutral dark lg</span>
-<span className="text-xl font-medium text-hallpass-neutral-dark">neutral dark xl</span>
-        </div>
-        </div>
-      </div>
-  </div></details>
-  <details className="my-6">
-    <summary className="cursor-pointer text-lg font-bold text-hallpass-primary">Primary</summary>
-    <div className="p-8 border">
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-sm text-hallpass-primary-light">
-        <span className="font-thin">light sm thin</span>
-        <span className="font-light">light sm light</span>
-        <span className="font-normal">light sm normal</span>
-        <span className="font-semibold">light sm semibold</span>
-        <span className="font-bold">light sm bold</span>
-        <span className="font-black">light sm black</span>
-      </div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-base text-hallpass-primary-light">
-        <span className="font-thin">light base thin</span>
-        <span className="font-light">light base light</span>
-        <span className="font-normal">light base normal</span>
-        <span className="font-semibold">light base semibold</span>
-        <span className="font-bold">light base bold</span>
-        <span className="font-black">light base black</span>
-      </div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-lg text-hallpass-primary-light">
-        <span className="font-thin">light lg thin</span>
-        <span className="font-light">light lg light</span>
-        <span className="font-normal">light lg normal</span>
-        <span className="font-semibold">light lg semibold</span>
-        <span className="font-bold">light lg bold</span>
-        <span className="font-black">light lg black</span>
-      </div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-xl text-hallpass-primary-light">
-        <span className="font-thin">light xl thin</span>
-        <span className="font-light">light xl light</span>
-        <span className="font-normal">light xl normal</span>
-        <span className="font-semibold">light xl semibold</span>
-        <span className="font-bold">light xl bold</span>
-        <span className="font-black">light xl black</span>
-      </div>
-    <div className="my-2 w-full h-1 bg-slate-500"></div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-sm text-hallpass-primary">
-        <span className="font-thin">Default sm thin</span>
-        <span className="font-light">Default sm light</span>
-        <span className="font-normal">Default sm normal</span>
-        <span className="font-semibold">Default sm semibold</span>
-        <span className="font-bold">Default sm bold</span>
-        <span className="font-black">Default sm black</span>
-      </div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-base text-hallpass-primary">
-        <span className="font-thin">Default base thin</span>
-        <span className="font-light">Default base light</span>
-        <span className="font-normal">Default base normal</span>
-        <span className="font-semibold">Default base semibold</span>
-        <span className="font-bold">Default base bold</span>
-        <span className="font-black">Default base black</span>
-      </div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-lg text-hallpass-primary">
-        <span className="font-thin">Default lg thin</span>
-        <span className="font-light">Default lg light</span>
-        <span className="font-normal">Default lg normal</span>
-        <span className="font-semibold">Default lg semibold</span>
-        <span className="font-bold">Default lg bold</span>
-        <span className="font-black">Default lg black</span>
-      </div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-xl text-hallpass-primary">
-        <span className="font-thin">Default xl thin</span>
-        <span className="font-light">Default xl light</span>
-        <span className="font-normal">Default xl normal</span>
-        <span className="font-semibold">Default xl semibold</span>
-        <span className="font-bold">Default xl bold</span>
-        <span className="font-black">Default xl black</span>
-      </div>
-    <div className="my-2 w-full h-1 bg-slate-500"></div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-sm text-hallpass-primary-dark">
-        <span className="font-thin">dark sm thin</span>
-        <span className="font-light">dark sm light</span>
-        <span className="font-normal">dark sm normal</span>
-        <span className="font-semibold">dark sm semibold</span>
-        <span className="font-bold">dark sm bold</span>
-        <span className="font-black">dark sm black</span>
-      </div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-base text-hallpass-primary-dark">
-        <span className="font-thin">dark base thin</span>
-        <span className="font-light">dark base light</span>
-        <span className="font-normal">dark base normal</span>
-        <span className="font-semibold">dark base semibold</span>
-        <span className="font-bold">dark base bold</span>
-        <span className="font-black">dark base black</span>
-      </div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-lg text-hallpass-primary-dark">
-        <span className="font-thin">dark lg thin</span>
-        <span className="font-light">dark lg light</span>
-        <span className="font-normal">dark lg normal</span>
-        <span className="font-semibold">dark lg semibold</span>
-        <span className="font-bold">dark lg bold</span>
-        <span className="font-black">dark lg black</span>
-      </div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-xl text-hallpass-primary-dark">
-        <span className="font-thin">dark xl thin</span>
-        <span className="font-light">dark xl light</span>
-        <span className="font-normal">dark xl normal</span>
-        <span className="font-semibold">dark xl semibold</span>
-        <span className="font-bold">dark xl bold</span>
-        <span className="font-black">dark xl black</span>
-      </div>
-      <div className="grid grid-cols-3 gap-x-4">
-        <div className="p-4 bg-hallpass-surface-light">
-        <div className="text-lg font-bold text-black">light Surface</div>
-        <div className="flex flex-wrap items-center gap-x-4">
-<span className="text-sm text-hallpass-primary-light">primary light sm</span>
-<span className="text-base text-hallpass-primary-light">primary light base</span>
-<span className="text-lg text-hallpass-primary-light">primary light lg</span>
-<span className="text-xl text-hallpass-primary-light">primary light xl</span>
-<span className="text-sm text-hallpass-primary">primary Default sm</span>
-<span className="text-base text-hallpass-primary">primary Default base</span>
-<span className="text-lg text-hallpass-primary">primary Default lg</span>
-<span className="text-xl text-hallpass-primary">primary Default xl</span>
-<span className="text-sm text-hallpass-primary-dark">primary dark sm</span>
-<span className="text-base text-hallpass-primary-dark">primary dark base</span>
-<span className="text-lg text-hallpass-primary-dark">primary dark lg</span>
-<span className="text-xl text-hallpass-primary-dark">primary dark xl</span>
-        </div>
-        </div>
-        <div className="p-4 bg-hallpass-surface">
-        <div className="text-lg font-bold text-black">Default Surface</div>
-        <div className="flex flex-wrap items-center gap-x-4">
-<span className="text-sm text-hallpass-primary-light">primary light sm</span>
-<span className="text-base text-hallpass-primary-light">primary light base</span>
-<span className="text-lg text-hallpass-primary-light">primary light lg</span>
-<span className="text-xl text-hallpass-primary-light">primary light xl</span>
-<span className="text-sm text-hallpass-primary">primary Default sm</span>
-<span className="text-base text-hallpass-primary">primary Default base</span>
-<span className="text-lg text-hallpass-primary">primary Default lg</span>
-<span className="text-xl text-hallpass-primary">primary Default xl</span>
-<span className="text-sm text-hallpass-primary-dark">primary dark sm</span>
-<span className="text-base text-hallpass-primary-dark">primary dark base</span>
-<span className="text-lg text-hallpass-primary-dark">primary dark lg</span>
-<span className="text-xl text-hallpass-primary-dark">primary dark xl</span>
-        </div>
-        </div>
-        <div className="p-4 bg-hallpass-surface-dark">
-        <div className="text-lg font-bold text-black">dark Surface</div>
-        <div className="flex flex-wrap items-center gap-x-4">
-<span className="text-sm text-hallpass-primary-light">primary light sm</span>
-<span className="text-base text-hallpass-primary-light">primary light base</span>
-<span className="text-lg text-hallpass-primary-light">primary light lg</span>
-<span className="text-xl text-hallpass-primary-light">primary light xl</span>
-<span className="text-sm text-hallpass-primary">primary Default sm</span>
-<span className="text-base text-hallpass-primary">primary Default base</span>
-<span className="text-lg text-hallpass-primary">primary Default lg</span>
-<span className="text-xl text-hallpass-primary">primary Default xl</span>
-<span className="text-sm text-hallpass-primary-dark">primary dark sm</span>
-<span className="text-base text-hallpass-primary-dark">primary dark base</span>
-<span className="text-lg text-hallpass-primary-dark">primary dark lg</span>
-<span className="text-xl text-hallpass-primary-dark">primary dark xl</span>
-        </div>
-        </div>
-      </div>
-      <div className="grid grid-cols-3 gap-x-4">
-        <div className="p-4 bg-hallpass-primary-light">
-        <div className="text-lg font-bold text-white">light primary</div>
-        <div className="flex flex-wrap items-center gap-x-4">
-<span className="text-sm text-hallpass-on-primary-light">primary light sm</span>
-<span className="text-base text-hallpass-on-primary-light">primary light base</span>
-<span className="text-lg text-hallpass-on-primary-light">primary light lg</span>
-<span className="text-xl text-hallpass-on-primary-light">primary light xl</span>
-        </div>
-        </div>
-        <div className="p-4 bg-hallpass-primary">
-        <div className="text-lg font-bold text-white">Default primary</div>
-        <div className="flex flex-wrap items-center gap-x-4">
-<span className="text-sm text-hallpass-on-primary">primary Default sm</span>
-<span className="text-base text-hallpass-on-primary">primary Default base</span>
-<span className="text-lg text-hallpass-on-primary">primary Default lg</span>
-<span className="text-xl text-hallpass-on-primary">primary Default xl</span>
-        </div>
-        </div>
-        <div className="p-4 bg-hallpass-primary-dark">
-        <div className="text-lg font-bold text-white">dark primary</div>
-        <div className="flex flex-wrap items-center gap-x-4">
-<span className="text-sm text-hallpass-on-primary-dark">primary dark sm</span>
-<span className="text-base text-hallpass-on-primary-dark">primary dark base</span>
-<span className="text-lg text-hallpass-on-primary-dark">primary dark lg</span>
-<span className="text-xl text-hallpass-on-primary-dark">primary dark xl</span>
-        </div>
-        </div>
-      </div>
-      <div className="grid grid-cols-3 gap-x-4">
-        <div className="p-4 bg-hallpass-primary-light/10">
-        <div className="text-lg font-bold text-black">light primary</div>
-        <div className="flex flex-wrap items-center gap-x-4">
-<span className="text-sm font-medium text-hallpass-primary-light">primary light sm</span>
-<span className="text-base font-medium text-hallpass-primary-light">primary light base</span>
-<span className="text-lg font-medium text-hallpass-primary-light">primary light lg</span>
-<span className="text-xl font-medium text-hallpass-primary-light">primary light xl</span>
-        </div>
-        </div>
-        <div className="p-4 bg-hallpass-primary/10">
-        <div className="text-lg font-bold text-black">Default primary</div>
-        <div className="flex flex-wrap items-center gap-x-4">
-<span className="text-sm font-medium text-hallpass-primary">primary Default sm</span>
-<span className="text-base font-medium text-hallpass-primary">primary Default base</span>
-<span className="text-lg font-medium text-hallpass-primary">primary Default lg</span>
-<span className="text-xl font-medium text-hallpass-primary">primary Default xl</span>
-        </div>
-        </div>
-        <div className="p-4 bg-hallpass-primary-dark/10">
-        <div className="text-lg font-bold text-black">dark primary</div>
-        <div className="flex flex-wrap items-center gap-x-4">
-<span className="text-sm font-medium text-hallpass-primary-dark">primary dark sm</span>
-<span className="text-base font-medium text-hallpass-primary-dark">primary dark base</span>
-<span className="text-lg font-medium text-hallpass-primary-dark">primary dark lg</span>
-<span className="text-xl font-medium text-hallpass-primary-dark">primary dark xl</span>
-        </div>
-        </div>
-      </div>
-  </div></details>
-  <details className="my-6">
-    <summary className="cursor-pointer text-lg font-bold text-hallpass-secondary">Secondary</summary>
-    <div className="p-8 border">
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-sm text-hallpass-secondary-light">
-        <span className="font-thin">light sm thin</span>
-        <span className="font-light">light sm light</span>
-        <span className="font-normal">light sm normal</span>
-        <span className="font-semibold">light sm semibold</span>
-        <span className="font-bold">light sm bold</span>
-        <span className="font-black">light sm black</span>
-      </div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-base text-hallpass-secondary-light">
-        <span className="font-thin">light base thin</span>
-        <span className="font-light">light base light</span>
-        <span className="font-normal">light base normal</span>
-        <span className="font-semibold">light base semibold</span>
-        <span className="font-bold">light base bold</span>
-        <span className="font-black">light base black</span>
-      </div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-lg text-hallpass-secondary-light">
-        <span className="font-thin">light lg thin</span>
-        <span className="font-light">light lg light</span>
-        <span className="font-normal">light lg normal</span>
-        <span className="font-semibold">light lg semibold</span>
-        <span className="font-bold">light lg bold</span>
-        <span className="font-black">light lg black</span>
-      </div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-xl text-hallpass-secondary-light">
-        <span className="font-thin">light xl thin</span>
-        <span className="font-light">light xl light</span>
-        <span className="font-normal">light xl normal</span>
-        <span className="font-semibold">light xl semibold</span>
-        <span className="font-bold">light xl bold</span>
-        <span className="font-black">light xl black</span>
-      </div>
-    <div className="my-2 w-full h-1 bg-slate-500"></div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-sm text-hallpass-secondary">
-        <span className="font-thin">Default sm thin</span>
-        <span className="font-light">Default sm light</span>
-        <span className="font-normal">Default sm normal</span>
-        <span className="font-semibold">Default sm semibold</span>
-        <span className="font-bold">Default sm bold</span>
-        <span className="font-black">Default sm black</span>
-      </div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-base text-hallpass-secondary">
-        <span className="font-thin">Default base thin</span>
-        <span className="font-light">Default base light</span>
-        <span className="font-normal">Default base normal</span>
-        <span className="font-semibold">Default base semibold</span>
-        <span className="font-bold">Default base bold</span>
-        <span className="font-black">Default base black</span>
-      </div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-lg text-hallpass-secondary">
-        <span className="font-thin">Default lg thin</span>
-        <span className="font-light">Default lg light</span>
-        <span className="font-normal">Default lg normal</span>
-        <span className="font-semibold">Default lg semibold</span>
-        <span className="font-bold">Default lg bold</span>
-        <span className="font-black">Default lg black</span>
-      </div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-xl text-hallpass-secondary">
-        <span className="font-thin">Default xl thin</span>
-        <span className="font-light">Default xl light</span>
-        <span className="font-normal">Default xl normal</span>
-        <span className="font-semibold">Default xl semibold</span>
-        <span className="font-bold">Default xl bold</span>
-        <span className="font-black">Default xl black</span>
-      </div>
-    <div className="my-2 w-full h-1 bg-slate-500"></div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-sm text-hallpass-secondary-dark">
-        <span className="font-thin">dark sm thin</span>
-        <span className="font-light">dark sm light</span>
-        <span className="font-normal">dark sm normal</span>
-        <span className="font-semibold">dark sm semibold</span>
-        <span className="font-bold">dark sm bold</span>
-        <span className="font-black">dark sm black</span>
-      </div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-base text-hallpass-secondary-dark">
-        <span className="font-thin">dark base thin</span>
-        <span className="font-light">dark base light</span>
-        <span className="font-normal">dark base normal</span>
-        <span className="font-semibold">dark base semibold</span>
-        <span className="font-bold">dark base bold</span>
-        <span className="font-black">dark base black</span>
-      </div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-lg text-hallpass-secondary-dark">
-        <span className="font-thin">dark lg thin</span>
-        <span className="font-light">dark lg light</span>
-        <span className="font-normal">dark lg normal</span>
-        <span className="font-semibold">dark lg semibold</span>
-        <span className="font-bold">dark lg bold</span>
-        <span className="font-black">dark lg black</span>
-      </div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-xl text-hallpass-secondary-dark">
-        <span className="font-thin">dark xl thin</span>
-        <span className="font-light">dark xl light</span>
-        <span className="font-normal">dark xl normal</span>
-        <span className="font-semibold">dark xl semibold</span>
-        <span className="font-bold">dark xl bold</span>
-        <span className="font-black">dark xl black</span>
-      </div>
-      <div className="grid grid-cols-3 gap-x-4">
-        <div className="p-4 bg-hallpass-surface-light">
-        <div className="text-lg font-bold text-black">light Surface</div>
-        <div className="flex flex-wrap items-center gap-x-4">
-<span className="text-sm text-hallpass-secondary-light">secondary light sm</span>
-<span className="text-base text-hallpass-secondary-light">secondary light base</span>
-<span className="text-lg text-hallpass-secondary-light">secondary light lg</span>
-<span className="text-xl text-hallpass-secondary-light">secondary light xl</span>
-<span className="text-sm text-hallpass-secondary">secondary Default sm</span>
-<span className="text-base text-hallpass-secondary">secondary Default base</span>
-<span className="text-lg text-hallpass-secondary">secondary Default lg</span>
-<span className="text-xl text-hallpass-secondary">secondary Default xl</span>
-<span className="text-sm text-hallpass-secondary-dark">secondary dark sm</span>
-<span className="text-base text-hallpass-secondary-dark">secondary dark base</span>
-<span className="text-lg text-hallpass-secondary-dark">secondary dark lg</span>
-<span className="text-xl text-hallpass-secondary-dark">secondary dark xl</span>
-        </div>
-        </div>
-        <div className="p-4 bg-hallpass-surface">
-        <div className="text-lg font-bold text-black">Default Surface</div>
-        <div className="flex flex-wrap items-center gap-x-4">
-<span className="text-sm text-hallpass-secondary-light">secondary light sm</span>
-<span className="text-base text-hallpass-secondary-light">secondary light base</span>
-<span className="text-lg text-hallpass-secondary-light">secondary light lg</span>
-<span className="text-xl text-hallpass-secondary-light">secondary light xl</span>
-<span className="text-sm text-hallpass-secondary">secondary Default sm</span>
-<span className="text-base text-hallpass-secondary">secondary Default base</span>
-<span className="text-lg text-hallpass-secondary">secondary Default lg</span>
-<span className="text-xl text-hallpass-secondary">secondary Default xl</span>
-<span className="text-sm text-hallpass-secondary-dark">secondary dark sm</span>
-<span className="text-base text-hallpass-secondary-dark">secondary dark base</span>
-<span className="text-lg text-hallpass-secondary-dark">secondary dark lg</span>
-<span className="text-xl text-hallpass-secondary-dark">secondary dark xl</span>
-        </div>
-        </div>
-        <div className="p-4 bg-hallpass-surface-dark">
-        <div className="text-lg font-bold text-black">dark Surface</div>
-        <div className="flex flex-wrap items-center gap-x-4">
-<span className="text-sm text-hallpass-secondary-light">secondary light sm</span>
-<span className="text-base text-hallpass-secondary-light">secondary light base</span>
-<span className="text-lg text-hallpass-secondary-light">secondary light lg</span>
-<span className="text-xl text-hallpass-secondary-light">secondary light xl</span>
-<span className="text-sm text-hallpass-secondary">secondary Default sm</span>
-<span className="text-base text-hallpass-secondary">secondary Default base</span>
-<span className="text-lg text-hallpass-secondary">secondary Default lg</span>
-<span className="text-xl text-hallpass-secondary">secondary Default xl</span>
-<span className="text-sm text-hallpass-secondary-dark">secondary dark sm</span>
-<span className="text-base text-hallpass-secondary-dark">secondary dark base</span>
-<span className="text-lg text-hallpass-secondary-dark">secondary dark lg</span>
-<span className="text-xl text-hallpass-secondary-dark">secondary dark xl</span>
-        </div>
-        </div>
-      </div>
-      <div className="grid grid-cols-3 gap-x-4">
-        <div className="p-4 bg-hallpass-secondary-light">
-        <div className="text-lg font-bold text-white">light secondary</div>
-        <div className="flex flex-wrap items-center gap-x-4">
-<span className="text-sm text-hallpass-on-secondary-light">secondary light sm</span>
-<span className="text-base text-hallpass-on-secondary-light">secondary light base</span>
-<span className="text-lg text-hallpass-on-secondary-light">secondary light lg</span>
-<span className="text-xl text-hallpass-on-secondary-light">secondary light xl</span>
-        </div>
-        </div>
-        <div className="p-4 bg-hallpass-secondary">
-        <div className="text-lg font-bold text-white">Default secondary</div>
-        <div className="flex flex-wrap items-center gap-x-4">
-<span className="text-sm text-hallpass-on-secondary">secondary Default sm</span>
-<span className="text-base text-hallpass-on-secondary">secondary Default base</span>
-<span className="text-lg text-hallpass-on-secondary">secondary Default lg</span>
-<span className="text-xl text-hallpass-on-secondary">secondary Default xl</span>
-        </div>
-        </div>
-        <div className="p-4 bg-hallpass-secondary-dark">
-        <div className="text-lg font-bold text-white">dark secondary</div>
-        <div className="flex flex-wrap items-center gap-x-4">
-<span className="text-sm text-hallpass-on-secondary-dark">secondary dark sm</span>
-<span className="text-base text-hallpass-on-secondary-dark">secondary dark base</span>
-<span className="text-lg text-hallpass-on-secondary-dark">secondary dark lg</span>
-<span className="text-xl text-hallpass-on-secondary-dark">secondary dark xl</span>
-        </div>
-        </div>
-      </div>
-      <div className="grid grid-cols-3 gap-x-4">
-        <div className="p-4 bg-hallpass-secondary-light/10">
-        <div className="text-lg font-bold text-black">light secondary</div>
-        <div className="flex flex-wrap items-center gap-x-4">
-<span className="text-sm font-medium text-hallpass-secondary-light">secondary light sm</span>
-<span className="text-base font-medium text-hallpass-secondary-light">secondary light base</span>
-<span className="text-lg font-medium text-hallpass-secondary-light">secondary light lg</span>
-<span className="text-xl font-medium text-hallpass-secondary-light">secondary light xl</span>
-        </div>
-        </div>
-        <div className="p-4 bg-hallpass-secondary/10">
-        <div className="text-lg font-bold text-black">Default secondary</div>
-        <div className="flex flex-wrap items-center gap-x-4">
-<span className="text-sm font-medium text-hallpass-secondary">secondary Default sm</span>
-<span className="text-base font-medium text-hallpass-secondary">secondary Default base</span>
-<span className="text-lg font-medium text-hallpass-secondary">secondary Default lg</span>
-<span className="text-xl font-medium text-hallpass-secondary">secondary Default xl</span>
-        </div>
-        </div>
-        <div className="p-4 bg-hallpass-secondary-dark/10">
-        <div className="text-lg font-bold text-black">dark secondary</div>
-        <div className="flex flex-wrap items-center gap-x-4">
-<span className="text-sm font-medium text-hallpass-secondary-dark">secondary dark sm</span>
-<span className="text-base font-medium text-hallpass-secondary-dark">secondary dark base</span>
-<span className="text-lg font-medium text-hallpass-secondary-dark">secondary dark lg</span>
-<span className="text-xl font-medium text-hallpass-secondary-dark">secondary dark xl</span>
-        </div>
-        </div>
-      </div>
-  </div></details>
-  <details className="my-6">
-    <summary className="cursor-pointer text-lg font-bold text-hallpass-error">Error</summary>
-    <div className="p-8 border">
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-sm text-hallpass-error-light">
-        <span className="font-thin">light sm thin</span>
-        <span className="font-light">light sm light</span>
-        <span className="font-normal">light sm normal</span>
-        <span className="font-semibold">light sm semibold</span>
-        <span className="font-bold">light sm bold</span>
-        <span className="font-black">light sm black</span>
-      </div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-base text-hallpass-error-light">
-        <span className="font-thin">light base thin</span>
-        <span className="font-light">light base light</span>
-        <span className="font-normal">light base normal</span>
-        <span className="font-semibold">light base semibold</span>
-        <span className="font-bold">light base bold</span>
-        <span className="font-black">light base black</span>
-      </div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-lg text-hallpass-error-light">
-        <span className="font-thin">light lg thin</span>
-        <span className="font-light">light lg light</span>
-        <span className="font-normal">light lg normal</span>
-        <span className="font-semibold">light lg semibold</span>
-        <span className="font-bold">light lg bold</span>
-        <span className="font-black">light lg black</span>
-      </div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-xl text-hallpass-error-light">
-        <span className="font-thin">light xl thin</span>
-        <span className="font-light">light xl light</span>
-        <span className="font-normal">light xl normal</span>
-        <span className="font-semibold">light xl semibold</span>
-        <span className="font-bold">light xl bold</span>
-        <span className="font-black">light xl black</span>
-      </div>
-    <div className="my-2 w-full h-1 bg-slate-500"></div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-sm text-hallpass-error">
-        <span className="font-thin">Default sm thin</span>
-        <span className="font-light">Default sm light</span>
-        <span className="font-normal">Default sm normal</span>
-        <span className="font-semibold">Default sm semibold</span>
-        <span className="font-bold">Default sm bold</span>
-        <span className="font-black">Default sm black</span>
-      </div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-base text-hallpass-error">
-        <span className="font-thin">Default base thin</span>
-        <span className="font-light">Default base light</span>
-        <span className="font-normal">Default base normal</span>
-        <span className="font-semibold">Default base semibold</span>
-        <span className="font-bold">Default base bold</span>
-        <span className="font-black">Default base black</span>
-      </div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-lg text-hallpass-error">
-        <span className="font-thin">Default lg thin</span>
-        <span className="font-light">Default lg light</span>
-        <span className="font-normal">Default lg normal</span>
-        <span className="font-semibold">Default lg semibold</span>
-        <span className="font-bold">Default lg bold</span>
-        <span className="font-black">Default lg black</span>
-      </div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-xl text-hallpass-error">
-        <span className="font-thin">Default xl thin</span>
-        <span className="font-light">Default xl light</span>
-        <span className="font-normal">Default xl normal</span>
-        <span className="font-semibold">Default xl semibold</span>
-        <span className="font-bold">Default xl bold</span>
-        <span className="font-black">Default xl black</span>
-      </div>
-    <div className="my-2 w-full h-1 bg-slate-500"></div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-sm text-hallpass-error-dark">
-        <span className="font-thin">dark sm thin</span>
-        <span className="font-light">dark sm light</span>
-        <span className="font-normal">dark sm normal</span>
-        <span className="font-semibold">dark sm semibold</span>
-        <span className="font-bold">dark sm bold</span>
-        <span className="font-black">dark sm black</span>
-      </div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-base text-hallpass-error-dark">
-        <span className="font-thin">dark base thin</span>
-        <span className="font-light">dark base light</span>
-        <span className="font-normal">dark base normal</span>
-        <span className="font-semibold">dark base semibold</span>
-        <span className="font-bold">dark base bold</span>
-        <span className="font-black">dark base black</span>
-      </div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-lg text-hallpass-error-dark">
-        <span className="font-thin">dark lg thin</span>
-        <span className="font-light">dark lg light</span>
-        <span className="font-normal">dark lg normal</span>
-        <span className="font-semibold">dark lg semibold</span>
-        <span className="font-bold">dark lg bold</span>
-        <span className="font-black">dark lg black</span>
-      </div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 text-xl text-hallpass-error-dark">
-        <span className="font-thin">dark xl thin</span>
-        <span className="font-light">dark xl light</span>
-        <span className="font-normal">dark xl normal</span>
-        <span className="font-semibold">dark xl semibold</span>
-        <span className="font-bold">dark xl bold</span>
-        <span className="font-black">dark xl black</span>
-      </div>
-      <div className="grid grid-cols-3 gap-x-4">
-        <div className="p-4 bg-hallpass-surface-light">
-        <div className="text-lg font-bold text-black">light Surface</div>
-        <div className="flex flex-wrap items-center gap-x-4">
-<span className="text-sm text-hallpass-error-light">error light sm</span>
-<span className="text-base text-hallpass-error-light">error light base</span>
-<span className="text-lg text-hallpass-error-light">error light lg</span>
-<span className="text-xl text-hallpass-error-light">error light xl</span>
-<span className="text-sm text-hallpass-error">error Default sm</span>
-<span className="text-base text-hallpass-error">error Default base</span>
-<span className="text-lg text-hallpass-error">error Default lg</span>
-<span className="text-xl text-hallpass-error">error Default xl</span>
-<span className="text-sm text-hallpass-error-dark">error dark sm</span>
-<span className="text-base text-hallpass-error-dark">error dark base</span>
-<span className="text-lg text-hallpass-error-dark">error dark lg</span>
-<span className="text-xl text-hallpass-error-dark">error dark xl</span>
-        </div>
-        </div>
-        <div className="p-4 bg-hallpass-surface">
-        <div className="text-lg font-bold text-black">Default Surface</div>
-        <div className="flex flex-wrap items-center gap-x-4">
-<span className="text-sm text-hallpass-error-light">error light sm</span>
-<span className="text-base text-hallpass-error-light">error light base</span>
-<span className="text-lg text-hallpass-error-light">error light lg</span>
-<span className="text-xl text-hallpass-error-light">error light xl</span>
-<span className="text-sm text-hallpass-error">error Default sm</span>
-<span className="text-base text-hallpass-error">error Default base</span>
-<span className="text-lg text-hallpass-error">error Default lg</span>
-<span className="text-xl text-hallpass-error">error Default xl</span>
-<span className="text-sm text-hallpass-error-dark">error dark sm</span>
-<span className="text-base text-hallpass-error-dark">error dark base</span>
-<span className="text-lg text-hallpass-error-dark">error dark lg</span>
-<span className="text-xl text-hallpass-error-dark">error dark xl</span>
-        </div>
-        </div>
-        <div className="p-4 bg-hallpass-surface-dark">
-        <div className="text-lg font-bold text-black">dark Surface</div>
-        <div className="flex flex-wrap items-center gap-x-4">
-<span className="text-sm text-hallpass-error-light">error light sm</span>
-<span className="text-base text-hallpass-error-light">error light base</span>
-<span className="text-lg text-hallpass-error-light">error light lg</span>
-<span className="text-xl text-hallpass-error-light">error light xl</span>
-<span className="text-sm text-hallpass-error">error Default sm</span>
-<span className="text-base text-hallpass-error">error Default base</span>
-<span className="text-lg text-hallpass-error">error Default lg</span>
-<span className="text-xl text-hallpass-error">error Default xl</span>
-<span className="text-sm text-hallpass-error-dark">error dark sm</span>
-<span className="text-base text-hallpass-error-dark">error dark base</span>
-<span className="text-lg text-hallpass-error-dark">error dark lg</span>
-<span className="text-xl text-hallpass-error-dark">error dark xl</span>
-        </div>
-        </div>
-      </div>
-      <div className="grid grid-cols-3 gap-x-4">
-        <div className="p-4 bg-hallpass-error-light">
-        <div className="text-lg font-bold text-white">light error</div>
-        <div className="flex flex-wrap items-center gap-x-4">
-<span className="text-sm text-hallpass-on-error-light">error light sm</span>
-<span className="text-base text-hallpass-on-error-light">error light base</span>
-<span className="text-lg text-hallpass-on-error-light">error light lg</span>
-<span className="text-xl text-hallpass-on-error-light">error light xl</span>
-        </div>
-        </div>
-        <div className="p-4 bg-hallpass-error">
-        <div className="text-lg font-bold text-white">Default error</div>
-        <div className="flex flex-wrap items-center gap-x-4">
-<span className="text-sm text-hallpass-on-error">error Default sm</span>
-<span className="text-base text-hallpass-on-error">error Default base</span>
-<span className="text-lg text-hallpass-on-error">error Default lg</span>
-<span className="text-xl text-hallpass-on-error">error Default xl</span>
-        </div>
-        </div>
-        <div className="p-4 bg-hallpass-error-dark">
-        <div className="text-lg font-bold text-white">dark error</div>
-        <div className="flex flex-wrap items-center gap-x-4">
-<span className="text-sm text-hallpass-on-error-dark">error dark sm</span>
-<span className="text-base text-hallpass-on-error-dark">error dark base</span>
-<span className="text-lg text-hallpass-on-error-dark">error dark lg</span>
-<span className="text-xl text-hallpass-on-error-dark">error dark xl</span>
-        </div>
-        </div>
-      </div>
-      <div className="grid grid-cols-3 gap-x-4">
-        <div className="p-4 bg-hallpass-error-light/10">
-        <div className="text-lg font-bold text-black">light error</div>
-        <div className="flex flex-wrap items-center gap-x-4">
-<span className="text-sm font-medium text-hallpass-error-light">error light sm</span>
-<span className="text-base font-medium text-hallpass-error-light">error light base</span>
-<span className="text-lg font-medium text-hallpass-error-light">error light lg</span>
-<span className="text-xl font-medium text-hallpass-error-light">error light xl</span>
-        </div>
-        </div>
-        <div className="p-4 bg-hallpass-error/10">
-        <div className="text-lg font-bold text-black">Default error</div>
-        <div className="flex flex-wrap items-center gap-x-4">
-<span className="text-sm font-medium text-hallpass-error">error Default sm</span>
-<span className="text-base font-medium text-hallpass-error">error Default base</span>
-<span className="text-lg font-medium text-hallpass-error">error Default lg</span>
-<span className="text-xl font-medium text-hallpass-error">error Default xl</span>
-        </div>
-        </div>
-        <div className="p-4 bg-hallpass-error-dark/10">
-        <div className="text-lg font-bold text-black">dark error</div>
-        <div className="flex flex-wrap items-center gap-x-4">
-<span className="text-sm font-medium text-hallpass-error-dark">error dark sm</span>
-<span className="text-base font-medium text-hallpass-error-dark">error dark base</span>
-<span className="text-lg font-medium text-hallpass-error-dark">error dark lg</span>
-<span className="text-xl font-medium text-hallpass-error-dark">error dark xl</span>
-        </div>
-        </div>
-      </div>
-  </div></details>
-</div></details>
-<details className="my-12 view-area"><summary className="cursor-pointer font-bold text-xl">Fonts</summary><div className="my-4 pl-4 border-l-8 border-slate-300">
-  <details className="my-6">
-        <summary className="cursor-pointer text-lg font-bold">Typography Plugin <code>prose</code></summary>
-        <div className="p-8 border">
+<details className="view-area">
+<summary className="cursor-pointer font-bold text-xl">Colors</summary>
+<div className="my-4 pl-4 border-l-8 border-slate-300">
+
+<details className="my-6">
+<summary className="cursor-pointer font-bold text-lg text-hallpass-neutral">Neutral</summary>
+<div className="my-4 px-4 border border-slate-200">
+
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-sm text-hallpass-neutral-light">
+<span className="font-thin">SMthinLight</span>
+<span className="font-light">SMlightLight</span>
+<span className="font-normal">SMnormalLight</span>
+<span className="font-semibold">SMsemiboldLight</span>
+<span className="font-bold">SMboldLight</span>
+<span className="font-black">SMblackLight</span>
+</div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-base text-hallpass-neutral-light">
+<span className="font-thin">BASEthinLight</span>
+<span className="font-light">BASElightLight</span>
+<span className="font-normal">BASEnormalLight</span>
+<span className="font-semibold">BASEsemiboldLight</span>
+<span className="font-bold">BASEboldLight</span>
+<span className="font-black">BASEblackLight</span>
+</div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-lg text-hallpass-neutral-light">
+<span className="font-thin">LGthinLight</span>
+<span className="font-light">LGlightLight</span>
+<span className="font-normal">LGnormalLight</span>
+<span className="font-semibold">LGsemiboldLight</span>
+<span className="font-bold">LGboldLight</span>
+<span className="font-black">LGblackLight</span>
+</div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-xl text-hallpass-neutral-light">
+<span className="font-thin">XLthinLight</span>
+<span className="font-light">XLlightLight</span>
+<span className="font-normal">XLnormalLight</span>
+<span className="font-semibold">XLsemiboldLight</span>
+<span className="font-bold">XLboldLight</span>
+<span className="font-black">XLblackLight</span>
+</div>
+<div className="my-2 w-full h-1 bg-slate-300"></div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-sm text-hallpass-neutral">
+<span className="font-thin">SMthinDefault</span>
+<span className="font-light">SMlightDefault</span>
+<span className="font-normal">SMnormalDefault</span>
+<span className="font-semibold">SMsemiboldDefault</span>
+<span className="font-bold">SMboldDefault</span>
+<span className="font-black">SMblackDefault</span>
+</div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-base text-hallpass-neutral">
+<span className="font-thin">BASEthinDefault</span>
+<span className="font-light">BASElightDefault</span>
+<span className="font-normal">BASEnormalDefault</span>
+<span className="font-semibold">BASEsemiboldDefault</span>
+<span className="font-bold">BASEboldDefault</span>
+<span className="font-black">BASEblackDefault</span>
+</div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-lg text-hallpass-neutral">
+<span className="font-thin">LGthinDefault</span>
+<span className="font-light">LGlightDefault</span>
+<span className="font-normal">LGnormalDefault</span>
+<span className="font-semibold">LGsemiboldDefault</span>
+<span className="font-bold">LGboldDefault</span>
+<span className="font-black">LGblackDefault</span>
+</div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-xl text-hallpass-neutral">
+<span className="font-thin">XLthinDefault</span>
+<span className="font-light">XLlightDefault</span>
+<span className="font-normal">XLnormalDefault</span>
+<span className="font-semibold">XLsemiboldDefault</span>
+<span className="font-bold">XLboldDefault</span>
+<span className="font-black">XLblackDefault</span>
+</div>
+<div className="my-2 w-full h-1 bg-slate-300"></div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-sm text-hallpass-neutral-dark">
+<span className="font-thin">SMthinDark</span>
+<span className="font-light">SMlightDark</span>
+<span className="font-normal">SMnormalDark</span>
+<span className="font-semibold">SMsemiboldDark</span>
+<span className="font-bold">SMboldDark</span>
+<span className="font-black">SMblackDark</span>
+</div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-base text-hallpass-neutral-dark">
+<span className="font-thin">BASEthinDark</span>
+<span className="font-light">BASElightDark</span>
+<span className="font-normal">BASEnormalDark</span>
+<span className="font-semibold">BASEsemiboldDark</span>
+<span className="font-bold">BASEboldDark</span>
+<span className="font-black">BASEblackDark</span>
+</div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-lg text-hallpass-neutral-dark">
+<span className="font-thin">LGthinDark</span>
+<span className="font-light">LGlightDark</span>
+<span className="font-normal">LGnormalDark</span>
+<span className="font-semibold">LGsemiboldDark</span>
+<span className="font-bold">LGboldDark</span>
+<span className="font-black">LGblackDark</span>
+</div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-xl text-hallpass-neutral-dark">
+<span className="font-thin">XLthinDark</span>
+<span className="font-light">XLlightDark</span>
+<span className="font-normal">XLnormalDark</span>
+<span className="font-semibold">XLsemiboldDark</span>
+<span className="font-bold">XLboldDark</span>
+<span className="font-black">XLblackDark</span>
+</div>
+<div className="grid grid-cols-3 gap-x-4">
+<div className="p-4 bg-hallpass-surface-light">
+<div className="text-lg font-bold text-black">Light Surface</div>
+<div className="flex flex-wrap items-center gap-x-4">
+<span className="text-sm text-hallpass-neutral-light">smNeutral-light</span>
+<span className="text-base text-hallpass-neutral-light">baseNeutral-light</span>
+<span className="text-lg text-hallpass-neutral-light">lgNeutral-light</span>
+<span className="text-xl text-hallpass-neutral-light">xlNeutral-light</span>
+<span className="text-sm text-hallpass-neutral">smNeutral</span>
+<span className="text-base text-hallpass-neutral">baseNeutral</span>
+<span className="text-lg text-hallpass-neutral">lgNeutral</span>
+<span className="text-xl text-hallpass-neutral">xlNeutral</span>
+<span className="text-sm text-hallpass-neutral-dark">smNeutral-dark</span>
+<span className="text-base text-hallpass-neutral-dark">baseNeutral-dark</span>
+<span className="text-lg text-hallpass-neutral-dark">lgNeutral-dark</span>
+<span className="text-xl text-hallpass-neutral-dark">xlNeutral-dark</span>
+</div>
+</div>
+<div className="p-4 bg-hallpass-surface">
+<div className="text-lg font-bold text-black">Default Surface</div>
+<div className="flex flex-wrap items-center gap-x-4">
+<span className="text-sm text-hallpass-neutral-light">smNeutral-light</span>
+<span className="text-base text-hallpass-neutral-light">baseNeutral-light</span>
+<span className="text-lg text-hallpass-neutral-light">lgNeutral-light</span>
+<span className="text-xl text-hallpass-neutral-light">xlNeutral-light</span>
+<span className="text-sm text-hallpass-neutral">smNeutral</span>
+<span className="text-base text-hallpass-neutral">baseNeutral</span>
+<span className="text-lg text-hallpass-neutral">lgNeutral</span>
+<span className="text-xl text-hallpass-neutral">xlNeutral</span>
+<span className="text-sm text-hallpass-neutral-dark">smNeutral-dark</span>
+<span className="text-base text-hallpass-neutral-dark">baseNeutral-dark</span>
+<span className="text-lg text-hallpass-neutral-dark">lgNeutral-dark</span>
+<span className="text-xl text-hallpass-neutral-dark">xlNeutral-dark</span>
+</div>
+</div>
+<div className="p-4 bg-hallpass-surface-dark">
+<div className="text-lg font-bold text-black">Dark Surface</div>
+<div className="flex flex-wrap items-center gap-x-4">
+<span className="text-sm text-hallpass-neutral-light">smNeutral-light</span>
+<span className="text-base text-hallpass-neutral-light">baseNeutral-light</span>
+<span className="text-lg text-hallpass-neutral-light">lgNeutral-light</span>
+<span className="text-xl text-hallpass-neutral-light">xlNeutral-light</span>
+<span className="text-sm text-hallpass-neutral">smNeutral</span>
+<span className="text-base text-hallpass-neutral">baseNeutral</span>
+<span className="text-lg text-hallpass-neutral">lgNeutral</span>
+<span className="text-xl text-hallpass-neutral">xlNeutral</span>
+<span className="text-sm text-hallpass-neutral-dark">smNeutral-dark</span>
+<span className="text-base text-hallpass-neutral-dark">baseNeutral-dark</span>
+<span className="text-lg text-hallpass-neutral-dark">lgNeutral-dark</span>
+<span className="text-xl text-hallpass-neutral-dark">xlNeutral-dark</span>
+</div>
+</div>
+</div>
+<div className="grid grid-cols-3 gap-x-4">
+<div className="p-4 bg-hallpass-neutral-light">
+<div className="text-lg font-bold text-white">Light Neutral</div>
+<div className="flex flex-wrap items-center gap-x-4">
+<span className="text-sm text-hallpass-on-neutral-light">smNeutral</span>
+<span className="text-base text-hallpass-on-neutral-light">baseNeutral</span>
+<span className="text-lg text-hallpass-on-neutral-light">lgNeutral</span>
+<span className="text-xl text-hallpass-on-neutral-light">xlNeutral</span>
+</div>
+</div>
+<div className="p-4 bg-hallpass-neutral">
+<div className="text-lg font-bold text-white">Default Neutral</div>
+<div className="flex flex-wrap items-center gap-x-4">
+<span className="text-sm text-hallpass-on-neutral">smNeutral</span>
+<span className="text-base text-hallpass-on-neutral">baseNeutral</span>
+<span className="text-lg text-hallpass-on-neutral">lgNeutral</span>
+<span className="text-xl text-hallpass-on-neutral">xlNeutral</span>
+</div>
+</div>
+<div className="p-4 bg-hallpass-neutral-dark">
+<div className="text-lg font-bold text-white">Dark Neutral</div>
+<div className="flex flex-wrap items-center gap-x-4">
+<span className="text-sm text-hallpass-on-neutral-dark">smNeutral</span>
+<span className="text-base text-hallpass-on-neutral-dark">baseNeutral</span>
+<span className="text-lg text-hallpass-on-neutral-dark">lgNeutral</span>
+<span className="text-xl text-hallpass-on-neutral-dark">xlNeutral</span>
+</div>
+</div>
+</div>
+<div className="grid grid-cols-3 gap-x-4">
+<div className="p-4 bg-hallpass-neutral-light/10">
+<div className="text-lg font-bold text-black">Light Neutral (opaque)</div>
+<div className="flex flex-wrap items-center gap-x-4">
+<span className="text-sm">smRandomText</span>
+<span className="text-base">baseRandomText</span>
+<span className="text-lg">lgRandomText</span>
+<span className="text-xl">xlRandomText</span>
+</div>
+</div>
+<div className="p-4 bg-hallpass-neutral/10">
+<div className="text-lg font-bold text-black">Default Neutral (opaque)</div>
+<div className="flex flex-wrap items-center gap-x-4">
+<span className="text-sm">smRandomText</span>
+<span className="text-base">baseRandomText</span>
+<span className="text-lg">lgRandomText</span>
+<span className="text-xl">xlRandomText</span>
+</div>
+</div>
+<div className="p-4 bg-hallpass-neutral-dark/10">
+<div className="text-lg font-bold text-black">Dark Neutral (opaque)</div>
+<div className="flex flex-wrap items-center gap-x-4">
+<span className="text-sm">smRandomText</span>
+<span className="text-base">baseRandomText</span>
+<span className="text-lg">lgRandomText</span>
+<span className="text-xl">xlRandomText</span>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details className="my-6">
+<summary className="cursor-pointer font-bold text-lg text-hallpass-primary">Primary</summary>
+<div className="my-4 px-4 border border-slate-200">
+
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-sm text-hallpass-primary-light">
+<span className="font-thin">SMthinLight</span>
+<span className="font-light">SMlightLight</span>
+<span className="font-normal">SMnormalLight</span>
+<span className="font-semibold">SMsemiboldLight</span>
+<span className="font-bold">SMboldLight</span>
+<span className="font-black">SMblackLight</span>
+</div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-base text-hallpass-primary-light">
+<span className="font-thin">BASEthinLight</span>
+<span className="font-light">BASElightLight</span>
+<span className="font-normal">BASEnormalLight</span>
+<span className="font-semibold">BASEsemiboldLight</span>
+<span className="font-bold">BASEboldLight</span>
+<span className="font-black">BASEblackLight</span>
+</div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-lg text-hallpass-primary-light">
+<span className="font-thin">LGthinLight</span>
+<span className="font-light">LGlightLight</span>
+<span className="font-normal">LGnormalLight</span>
+<span className="font-semibold">LGsemiboldLight</span>
+<span className="font-bold">LGboldLight</span>
+<span className="font-black">LGblackLight</span>
+</div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-xl text-hallpass-primary-light">
+<span className="font-thin">XLthinLight</span>
+<span className="font-light">XLlightLight</span>
+<span className="font-normal">XLnormalLight</span>
+<span className="font-semibold">XLsemiboldLight</span>
+<span className="font-bold">XLboldLight</span>
+<span className="font-black">XLblackLight</span>
+</div>
+<div className="my-2 w-full h-1 bg-slate-300"></div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-sm text-hallpass-primary">
+<span className="font-thin">SMthinDefault</span>
+<span className="font-light">SMlightDefault</span>
+<span className="font-normal">SMnormalDefault</span>
+<span className="font-semibold">SMsemiboldDefault</span>
+<span className="font-bold">SMboldDefault</span>
+<span className="font-black">SMblackDefault</span>
+</div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-base text-hallpass-primary">
+<span className="font-thin">BASEthinDefault</span>
+<span className="font-light">BASElightDefault</span>
+<span className="font-normal">BASEnormalDefault</span>
+<span className="font-semibold">BASEsemiboldDefault</span>
+<span className="font-bold">BASEboldDefault</span>
+<span className="font-black">BASEblackDefault</span>
+</div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-lg text-hallpass-primary">
+<span className="font-thin">LGthinDefault</span>
+<span className="font-light">LGlightDefault</span>
+<span className="font-normal">LGnormalDefault</span>
+<span className="font-semibold">LGsemiboldDefault</span>
+<span className="font-bold">LGboldDefault</span>
+<span className="font-black">LGblackDefault</span>
+</div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-xl text-hallpass-primary">
+<span className="font-thin">XLthinDefault</span>
+<span className="font-light">XLlightDefault</span>
+<span className="font-normal">XLnormalDefault</span>
+<span className="font-semibold">XLsemiboldDefault</span>
+<span className="font-bold">XLboldDefault</span>
+<span className="font-black">XLblackDefault</span>
+</div>
+<div className="my-2 w-full h-1 bg-slate-300"></div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-sm text-hallpass-primary-dark">
+<span className="font-thin">SMthinDark</span>
+<span className="font-light">SMlightDark</span>
+<span className="font-normal">SMnormalDark</span>
+<span className="font-semibold">SMsemiboldDark</span>
+<span className="font-bold">SMboldDark</span>
+<span className="font-black">SMblackDark</span>
+</div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-base text-hallpass-primary-dark">
+<span className="font-thin">BASEthinDark</span>
+<span className="font-light">BASElightDark</span>
+<span className="font-normal">BASEnormalDark</span>
+<span className="font-semibold">BASEsemiboldDark</span>
+<span className="font-bold">BASEboldDark</span>
+<span className="font-black">BASEblackDark</span>
+</div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-lg text-hallpass-primary-dark">
+<span className="font-thin">LGthinDark</span>
+<span className="font-light">LGlightDark</span>
+<span className="font-normal">LGnormalDark</span>
+<span className="font-semibold">LGsemiboldDark</span>
+<span className="font-bold">LGboldDark</span>
+<span className="font-black">LGblackDark</span>
+</div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-xl text-hallpass-primary-dark">
+<span className="font-thin">XLthinDark</span>
+<span className="font-light">XLlightDark</span>
+<span className="font-normal">XLnormalDark</span>
+<span className="font-semibold">XLsemiboldDark</span>
+<span className="font-bold">XLboldDark</span>
+<span className="font-black">XLblackDark</span>
+</div>
+<div className="grid grid-cols-3 gap-x-4">
+<div className="p-4 bg-hallpass-surface-light">
+<div className="text-lg font-bold text-black">Light Surface</div>
+<div className="flex flex-wrap items-center gap-x-4">
+<span className="text-sm text-hallpass-primary-light">smPrimary-light</span>
+<span className="text-base text-hallpass-primary-light">basePrimary-light</span>
+<span className="text-lg text-hallpass-primary-light">lgPrimary-light</span>
+<span className="text-xl text-hallpass-primary-light">xlPrimary-light</span>
+<span className="text-sm text-hallpass-primary">smPrimary</span>
+<span className="text-base text-hallpass-primary">basePrimary</span>
+<span className="text-lg text-hallpass-primary">lgPrimary</span>
+<span className="text-xl text-hallpass-primary">xlPrimary</span>
+<span className="text-sm text-hallpass-primary-dark">smPrimary-dark</span>
+<span className="text-base text-hallpass-primary-dark">basePrimary-dark</span>
+<span className="text-lg text-hallpass-primary-dark">lgPrimary-dark</span>
+<span className="text-xl text-hallpass-primary-dark">xlPrimary-dark</span>
+</div>
+</div>
+<div className="p-4 bg-hallpass-surface">
+<div className="text-lg font-bold text-black">Default Surface</div>
+<div className="flex flex-wrap items-center gap-x-4">
+<span className="text-sm text-hallpass-primary-light">smPrimary-light</span>
+<span className="text-base text-hallpass-primary-light">basePrimary-light</span>
+<span className="text-lg text-hallpass-primary-light">lgPrimary-light</span>
+<span className="text-xl text-hallpass-primary-light">xlPrimary-light</span>
+<span className="text-sm text-hallpass-primary">smPrimary</span>
+<span className="text-base text-hallpass-primary">basePrimary</span>
+<span className="text-lg text-hallpass-primary">lgPrimary</span>
+<span className="text-xl text-hallpass-primary">xlPrimary</span>
+<span className="text-sm text-hallpass-primary-dark">smPrimary-dark</span>
+<span className="text-base text-hallpass-primary-dark">basePrimary-dark</span>
+<span className="text-lg text-hallpass-primary-dark">lgPrimary-dark</span>
+<span className="text-xl text-hallpass-primary-dark">xlPrimary-dark</span>
+</div>
+</div>
+<div className="p-4 bg-hallpass-surface-dark">
+<div className="text-lg font-bold text-black">Dark Surface</div>
+<div className="flex flex-wrap items-center gap-x-4">
+<span className="text-sm text-hallpass-primary-light">smPrimary-light</span>
+<span className="text-base text-hallpass-primary-light">basePrimary-light</span>
+<span className="text-lg text-hallpass-primary-light">lgPrimary-light</span>
+<span className="text-xl text-hallpass-primary-light">xlPrimary-light</span>
+<span className="text-sm text-hallpass-primary">smPrimary</span>
+<span className="text-base text-hallpass-primary">basePrimary</span>
+<span className="text-lg text-hallpass-primary">lgPrimary</span>
+<span className="text-xl text-hallpass-primary">xlPrimary</span>
+<span className="text-sm text-hallpass-primary-dark">smPrimary-dark</span>
+<span className="text-base text-hallpass-primary-dark">basePrimary-dark</span>
+<span className="text-lg text-hallpass-primary-dark">lgPrimary-dark</span>
+<span className="text-xl text-hallpass-primary-dark">xlPrimary-dark</span>
+</div>
+</div>
+</div>
+<div className="grid grid-cols-3 gap-x-4">
+<div className="p-4 bg-hallpass-primary-light">
+<div className="text-lg font-bold text-white">Light Primary</div>
+<div className="flex flex-wrap items-center gap-x-4">
+<span className="text-sm text-hallpass-on-primary-light">smPrimary</span>
+<span className="text-base text-hallpass-on-primary-light">basePrimary</span>
+<span className="text-lg text-hallpass-on-primary-light">lgPrimary</span>
+<span className="text-xl text-hallpass-on-primary-light">xlPrimary</span>
+</div>
+</div>
+<div className="p-4 bg-hallpass-primary">
+<div className="text-lg font-bold text-white">Default Primary</div>
+<div className="flex flex-wrap items-center gap-x-4">
+<span className="text-sm text-hallpass-on-primary">smPrimary</span>
+<span className="text-base text-hallpass-on-primary">basePrimary</span>
+<span className="text-lg text-hallpass-on-primary">lgPrimary</span>
+<span className="text-xl text-hallpass-on-primary">xlPrimary</span>
+</div>
+</div>
+<div className="p-4 bg-hallpass-primary-dark">
+<div className="text-lg font-bold text-white">Dark Primary</div>
+<div className="flex flex-wrap items-center gap-x-4">
+<span className="text-sm text-hallpass-on-primary-dark">smPrimary</span>
+<span className="text-base text-hallpass-on-primary-dark">basePrimary</span>
+<span className="text-lg text-hallpass-on-primary-dark">lgPrimary</span>
+<span className="text-xl text-hallpass-on-primary-dark">xlPrimary</span>
+</div>
+</div>
+</div>
+<div className="grid grid-cols-3 gap-x-4">
+<div className="p-4 bg-hallpass-primary-light/10">
+<div className="text-lg font-bold text-black">Light Primary (opaque)</div>
+<div className="flex flex-wrap items-center gap-x-4">
+<span className="text-sm">smRandomText</span>
+<span className="text-base">baseRandomText</span>
+<span className="text-lg">lgRandomText</span>
+<span className="text-xl">xlRandomText</span>
+</div>
+</div>
+<div className="p-4 bg-hallpass-primary/10">
+<div className="text-lg font-bold text-black">Default Primary (opaque)</div>
+<div className="flex flex-wrap items-center gap-x-4">
+<span className="text-sm">smRandomText</span>
+<span className="text-base">baseRandomText</span>
+<span className="text-lg">lgRandomText</span>
+<span className="text-xl">xlRandomText</span>
+</div>
+</div>
+<div className="p-4 bg-hallpass-primary-dark/10">
+<div className="text-lg font-bold text-black">Dark Primary (opaque)</div>
+<div className="flex flex-wrap items-center gap-x-4">
+<span className="text-sm">smRandomText</span>
+<span className="text-base">baseRandomText</span>
+<span className="text-lg">lgRandomText</span>
+<span className="text-xl">xlRandomText</span>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details className="my-6">
+<summary className="cursor-pointer font-bold text-lg text-hallpass-secondary">Secondary</summary>
+<div className="my-4 px-4 border border-slate-200">
+
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-sm text-hallpass-secondary-light">
+<span className="font-thin">SMthinLight</span>
+<span className="font-light">SMlightLight</span>
+<span className="font-normal">SMnormalLight</span>
+<span className="font-semibold">SMsemiboldLight</span>
+<span className="font-bold">SMboldLight</span>
+<span className="font-black">SMblackLight</span>
+</div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-base text-hallpass-secondary-light">
+<span className="font-thin">BASEthinLight</span>
+<span className="font-light">BASElightLight</span>
+<span className="font-normal">BASEnormalLight</span>
+<span className="font-semibold">BASEsemiboldLight</span>
+<span className="font-bold">BASEboldLight</span>
+<span className="font-black">BASEblackLight</span>
+</div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-lg text-hallpass-secondary-light">
+<span className="font-thin">LGthinLight</span>
+<span className="font-light">LGlightLight</span>
+<span className="font-normal">LGnormalLight</span>
+<span className="font-semibold">LGsemiboldLight</span>
+<span className="font-bold">LGboldLight</span>
+<span className="font-black">LGblackLight</span>
+</div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-xl text-hallpass-secondary-light">
+<span className="font-thin">XLthinLight</span>
+<span className="font-light">XLlightLight</span>
+<span className="font-normal">XLnormalLight</span>
+<span className="font-semibold">XLsemiboldLight</span>
+<span className="font-bold">XLboldLight</span>
+<span className="font-black">XLblackLight</span>
+</div>
+<div className="my-2 w-full h-1 bg-slate-300"></div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-sm text-hallpass-secondary">
+<span className="font-thin">SMthinDefault</span>
+<span className="font-light">SMlightDefault</span>
+<span className="font-normal">SMnormalDefault</span>
+<span className="font-semibold">SMsemiboldDefault</span>
+<span className="font-bold">SMboldDefault</span>
+<span className="font-black">SMblackDefault</span>
+</div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-base text-hallpass-secondary">
+<span className="font-thin">BASEthinDefault</span>
+<span className="font-light">BASElightDefault</span>
+<span className="font-normal">BASEnormalDefault</span>
+<span className="font-semibold">BASEsemiboldDefault</span>
+<span className="font-bold">BASEboldDefault</span>
+<span className="font-black">BASEblackDefault</span>
+</div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-lg text-hallpass-secondary">
+<span className="font-thin">LGthinDefault</span>
+<span className="font-light">LGlightDefault</span>
+<span className="font-normal">LGnormalDefault</span>
+<span className="font-semibold">LGsemiboldDefault</span>
+<span className="font-bold">LGboldDefault</span>
+<span className="font-black">LGblackDefault</span>
+</div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-xl text-hallpass-secondary">
+<span className="font-thin">XLthinDefault</span>
+<span className="font-light">XLlightDefault</span>
+<span className="font-normal">XLnormalDefault</span>
+<span className="font-semibold">XLsemiboldDefault</span>
+<span className="font-bold">XLboldDefault</span>
+<span className="font-black">XLblackDefault</span>
+</div>
+<div className="my-2 w-full h-1 bg-slate-300"></div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-sm text-hallpass-secondary-dark">
+<span className="font-thin">SMthinDark</span>
+<span className="font-light">SMlightDark</span>
+<span className="font-normal">SMnormalDark</span>
+<span className="font-semibold">SMsemiboldDark</span>
+<span className="font-bold">SMboldDark</span>
+<span className="font-black">SMblackDark</span>
+</div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-base text-hallpass-secondary-dark">
+<span className="font-thin">BASEthinDark</span>
+<span className="font-light">BASElightDark</span>
+<span className="font-normal">BASEnormalDark</span>
+<span className="font-semibold">BASEsemiboldDark</span>
+<span className="font-bold">BASEboldDark</span>
+<span className="font-black">BASEblackDark</span>
+</div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-lg text-hallpass-secondary-dark">
+<span className="font-thin">LGthinDark</span>
+<span className="font-light">LGlightDark</span>
+<span className="font-normal">LGnormalDark</span>
+<span className="font-semibold">LGsemiboldDark</span>
+<span className="font-bold">LGboldDark</span>
+<span className="font-black">LGblackDark</span>
+</div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-xl text-hallpass-secondary-dark">
+<span className="font-thin">XLthinDark</span>
+<span className="font-light">XLlightDark</span>
+<span className="font-normal">XLnormalDark</span>
+<span className="font-semibold">XLsemiboldDark</span>
+<span className="font-bold">XLboldDark</span>
+<span className="font-black">XLblackDark</span>
+</div>
+<div className="grid grid-cols-3 gap-x-4">
+<div className="p-4 bg-hallpass-surface-light">
+<div className="text-lg font-bold text-black">Light Surface</div>
+<div className="flex flex-wrap items-center gap-x-4">
+<span className="text-sm text-hallpass-secondary-light">smSecondary-light</span>
+<span className="text-base text-hallpass-secondary-light">baseSecondary-light</span>
+<span className="text-lg text-hallpass-secondary-light">lgSecondary-light</span>
+<span className="text-xl text-hallpass-secondary-light">xlSecondary-light</span>
+<span className="text-sm text-hallpass-secondary">smSecondary</span>
+<span className="text-base text-hallpass-secondary">baseSecondary</span>
+<span className="text-lg text-hallpass-secondary">lgSecondary</span>
+<span className="text-xl text-hallpass-secondary">xlSecondary</span>
+<span className="text-sm text-hallpass-secondary-dark">smSecondary-dark</span>
+<span className="text-base text-hallpass-secondary-dark">baseSecondary-dark</span>
+<span className="text-lg text-hallpass-secondary-dark">lgSecondary-dark</span>
+<span className="text-xl text-hallpass-secondary-dark">xlSecondary-dark</span>
+</div>
+</div>
+<div className="p-4 bg-hallpass-surface">
+<div className="text-lg font-bold text-black">Default Surface</div>
+<div className="flex flex-wrap items-center gap-x-4">
+<span className="text-sm text-hallpass-secondary-light">smSecondary-light</span>
+<span className="text-base text-hallpass-secondary-light">baseSecondary-light</span>
+<span className="text-lg text-hallpass-secondary-light">lgSecondary-light</span>
+<span className="text-xl text-hallpass-secondary-light">xlSecondary-light</span>
+<span className="text-sm text-hallpass-secondary">smSecondary</span>
+<span className="text-base text-hallpass-secondary">baseSecondary</span>
+<span className="text-lg text-hallpass-secondary">lgSecondary</span>
+<span className="text-xl text-hallpass-secondary">xlSecondary</span>
+<span className="text-sm text-hallpass-secondary-dark">smSecondary-dark</span>
+<span className="text-base text-hallpass-secondary-dark">baseSecondary-dark</span>
+<span className="text-lg text-hallpass-secondary-dark">lgSecondary-dark</span>
+<span className="text-xl text-hallpass-secondary-dark">xlSecondary-dark</span>
+</div>
+</div>
+<div className="p-4 bg-hallpass-surface-dark">
+<div className="text-lg font-bold text-black">Dark Surface</div>
+<div className="flex flex-wrap items-center gap-x-4">
+<span className="text-sm text-hallpass-secondary-light">smSecondary-light</span>
+<span className="text-base text-hallpass-secondary-light">baseSecondary-light</span>
+<span className="text-lg text-hallpass-secondary-light">lgSecondary-light</span>
+<span className="text-xl text-hallpass-secondary-light">xlSecondary-light</span>
+<span className="text-sm text-hallpass-secondary">smSecondary</span>
+<span className="text-base text-hallpass-secondary">baseSecondary</span>
+<span className="text-lg text-hallpass-secondary">lgSecondary</span>
+<span className="text-xl text-hallpass-secondary">xlSecondary</span>
+<span className="text-sm text-hallpass-secondary-dark">smSecondary-dark</span>
+<span className="text-base text-hallpass-secondary-dark">baseSecondary-dark</span>
+<span className="text-lg text-hallpass-secondary-dark">lgSecondary-dark</span>
+<span className="text-xl text-hallpass-secondary-dark">xlSecondary-dark</span>
+</div>
+</div>
+</div>
+<div className="grid grid-cols-3 gap-x-4">
+<div className="p-4 bg-hallpass-secondary-light">
+<div className="text-lg font-bold text-white">Light Secondary</div>
+<div className="flex flex-wrap items-center gap-x-4">
+<span className="text-sm text-hallpass-on-secondary-light">smSecondary</span>
+<span className="text-base text-hallpass-on-secondary-light">baseSecondary</span>
+<span className="text-lg text-hallpass-on-secondary-light">lgSecondary</span>
+<span className="text-xl text-hallpass-on-secondary-light">xlSecondary</span>
+</div>
+</div>
+<div className="p-4 bg-hallpass-secondary">
+<div className="text-lg font-bold text-white">Default Secondary</div>
+<div className="flex flex-wrap items-center gap-x-4">
+<span className="text-sm text-hallpass-on-secondary">smSecondary</span>
+<span className="text-base text-hallpass-on-secondary">baseSecondary</span>
+<span className="text-lg text-hallpass-on-secondary">lgSecondary</span>
+<span className="text-xl text-hallpass-on-secondary">xlSecondary</span>
+</div>
+</div>
+<div className="p-4 bg-hallpass-secondary-dark">
+<div className="text-lg font-bold text-white">Dark Secondary</div>
+<div className="flex flex-wrap items-center gap-x-4">
+<span className="text-sm text-hallpass-on-secondary-dark">smSecondary</span>
+<span className="text-base text-hallpass-on-secondary-dark">baseSecondary</span>
+<span className="text-lg text-hallpass-on-secondary-dark">lgSecondary</span>
+<span className="text-xl text-hallpass-on-secondary-dark">xlSecondary</span>
+</div>
+</div>
+</div>
+<div className="grid grid-cols-3 gap-x-4">
+<div className="p-4 bg-hallpass-secondary-light/10">
+<div className="text-lg font-bold text-black">Light Secondary (opaque)</div>
+<div className="flex flex-wrap items-center gap-x-4">
+<span className="text-sm">smRandomText</span>
+<span className="text-base">baseRandomText</span>
+<span className="text-lg">lgRandomText</span>
+<span className="text-xl">xlRandomText</span>
+</div>
+</div>
+<div className="p-4 bg-hallpass-secondary/10">
+<div className="text-lg font-bold text-black">Default Secondary (opaque)</div>
+<div className="flex flex-wrap items-center gap-x-4">
+<span className="text-sm">smRandomText</span>
+<span className="text-base">baseRandomText</span>
+<span className="text-lg">lgRandomText</span>
+<span className="text-xl">xlRandomText</span>
+</div>
+</div>
+<div className="p-4 bg-hallpass-secondary-dark/10">
+<div className="text-lg font-bold text-black">Dark Secondary (opaque)</div>
+<div className="flex flex-wrap items-center gap-x-4">
+<span className="text-sm">smRandomText</span>
+<span className="text-base">baseRandomText</span>
+<span className="text-lg">lgRandomText</span>
+<span className="text-xl">xlRandomText</span>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details className="my-6">
+<summary className="cursor-pointer font-bold text-lg text-hallpass-error">Error</summary>
+<div className="my-4 px-4 border border-slate-200">
+
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-sm text-hallpass-error-light">
+<span className="font-thin">SMthinLight</span>
+<span className="font-light">SMlightLight</span>
+<span className="font-normal">SMnormalLight</span>
+<span className="font-semibold">SMsemiboldLight</span>
+<span className="font-bold">SMboldLight</span>
+<span className="font-black">SMblackLight</span>
+</div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-base text-hallpass-error-light">
+<span className="font-thin">BASEthinLight</span>
+<span className="font-light">BASElightLight</span>
+<span className="font-normal">BASEnormalLight</span>
+<span className="font-semibold">BASEsemiboldLight</span>
+<span className="font-bold">BASEboldLight</span>
+<span className="font-black">BASEblackLight</span>
+</div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-lg text-hallpass-error-light">
+<span className="font-thin">LGthinLight</span>
+<span className="font-light">LGlightLight</span>
+<span className="font-normal">LGnormalLight</span>
+<span className="font-semibold">LGsemiboldLight</span>
+<span className="font-bold">LGboldLight</span>
+<span className="font-black">LGblackLight</span>
+</div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-xl text-hallpass-error-light">
+<span className="font-thin">XLthinLight</span>
+<span className="font-light">XLlightLight</span>
+<span className="font-normal">XLnormalLight</span>
+<span className="font-semibold">XLsemiboldLight</span>
+<span className="font-bold">XLboldLight</span>
+<span className="font-black">XLblackLight</span>
+</div>
+<div className="my-2 w-full h-1 bg-slate-300"></div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-sm text-hallpass-error">
+<span className="font-thin">SMthinDefault</span>
+<span className="font-light">SMlightDefault</span>
+<span className="font-normal">SMnormalDefault</span>
+<span className="font-semibold">SMsemiboldDefault</span>
+<span className="font-bold">SMboldDefault</span>
+<span className="font-black">SMblackDefault</span>
+</div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-base text-hallpass-error">
+<span className="font-thin">BASEthinDefault</span>
+<span className="font-light">BASElightDefault</span>
+<span className="font-normal">BASEnormalDefault</span>
+<span className="font-semibold">BASEsemiboldDefault</span>
+<span className="font-bold">BASEboldDefault</span>
+<span className="font-black">BASEblackDefault</span>
+</div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-lg text-hallpass-error">
+<span className="font-thin">LGthinDefault</span>
+<span className="font-light">LGlightDefault</span>
+<span className="font-normal">LGnormalDefault</span>
+<span className="font-semibold">LGsemiboldDefault</span>
+<span className="font-bold">LGboldDefault</span>
+<span className="font-black">LGblackDefault</span>
+</div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-xl text-hallpass-error">
+<span className="font-thin">XLthinDefault</span>
+<span className="font-light">XLlightDefault</span>
+<span className="font-normal">XLnormalDefault</span>
+<span className="font-semibold">XLsemiboldDefault</span>
+<span className="font-bold">XLboldDefault</span>
+<span className="font-black">XLblackDefault</span>
+</div>
+<div className="my-2 w-full h-1 bg-slate-300"></div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-sm text-hallpass-error-dark">
+<span className="font-thin">SMthinDark</span>
+<span className="font-light">SMlightDark</span>
+<span className="font-normal">SMnormalDark</span>
+<span className="font-semibold">SMsemiboldDark</span>
+<span className="font-bold">SMboldDark</span>
+<span className="font-black">SMblackDark</span>
+</div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-base text-hallpass-error-dark">
+<span className="font-thin">BASEthinDark</span>
+<span className="font-light">BASElightDark</span>
+<span className="font-normal">BASEnormalDark</span>
+<span className="font-semibold">BASEsemiboldDark</span>
+<span className="font-bold">BASEboldDark</span>
+<span className="font-black">BASEblackDark</span>
+</div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-lg text-hallpass-error-dark">
+<span className="font-thin">LGthinDark</span>
+<span className="font-light">LGlightDark</span>
+<span className="font-normal">LGnormalDark</span>
+<span className="font-semibold">LGsemiboldDark</span>
+<span className="font-bold">LGboldDark</span>
+<span className="font-black">LGblackDark</span>
+</div>
+<div className="mb-4 flex flex-wrap items-center gap-x-4 text-xl text-hallpass-error-dark">
+<span className="font-thin">XLthinDark</span>
+<span className="font-light">XLlightDark</span>
+<span className="font-normal">XLnormalDark</span>
+<span className="font-semibold">XLsemiboldDark</span>
+<span className="font-bold">XLboldDark</span>
+<span className="font-black">XLblackDark</span>
+</div>
+<div className="grid grid-cols-3 gap-x-4">
+<div className="p-4 bg-hallpass-surface-light">
+<div className="text-lg font-bold text-black">Light Surface</div>
+<div className="flex flex-wrap items-center gap-x-4">
+<span className="text-sm text-hallpass-error-light">smError-light</span>
+<span className="text-base text-hallpass-error-light">baseError-light</span>
+<span className="text-lg text-hallpass-error-light">lgError-light</span>
+<span className="text-xl text-hallpass-error-light">xlError-light</span>
+<span className="text-sm text-hallpass-error">smError</span>
+<span className="text-base text-hallpass-error">baseError</span>
+<span className="text-lg text-hallpass-error">lgError</span>
+<span className="text-xl text-hallpass-error">xlError</span>
+<span className="text-sm text-hallpass-error-dark">smError-dark</span>
+<span className="text-base text-hallpass-error-dark">baseError-dark</span>
+<span className="text-lg text-hallpass-error-dark">lgError-dark</span>
+<span className="text-xl text-hallpass-error-dark">xlError-dark</span>
+</div>
+</div>
+<div className="p-4 bg-hallpass-surface">
+<div className="text-lg font-bold text-black">Default Surface</div>
+<div className="flex flex-wrap items-center gap-x-4">
+<span className="text-sm text-hallpass-error-light">smError-light</span>
+<span className="text-base text-hallpass-error-light">baseError-light</span>
+<span className="text-lg text-hallpass-error-light">lgError-light</span>
+<span className="text-xl text-hallpass-error-light">xlError-light</span>
+<span className="text-sm text-hallpass-error">smError</span>
+<span className="text-base text-hallpass-error">baseError</span>
+<span className="text-lg text-hallpass-error">lgError</span>
+<span className="text-xl text-hallpass-error">xlError</span>
+<span className="text-sm text-hallpass-error-dark">smError-dark</span>
+<span className="text-base text-hallpass-error-dark">baseError-dark</span>
+<span className="text-lg text-hallpass-error-dark">lgError-dark</span>
+<span className="text-xl text-hallpass-error-dark">xlError-dark</span>
+</div>
+</div>
+<div className="p-4 bg-hallpass-surface-dark">
+<div className="text-lg font-bold text-black">Dark Surface</div>
+<div className="flex flex-wrap items-center gap-x-4">
+<span className="text-sm text-hallpass-error-light">smError-light</span>
+<span className="text-base text-hallpass-error-light">baseError-light</span>
+<span className="text-lg text-hallpass-error-light">lgError-light</span>
+<span className="text-xl text-hallpass-error-light">xlError-light</span>
+<span className="text-sm text-hallpass-error">smError</span>
+<span className="text-base text-hallpass-error">baseError</span>
+<span className="text-lg text-hallpass-error">lgError</span>
+<span className="text-xl text-hallpass-error">xlError</span>
+<span className="text-sm text-hallpass-error-dark">smError-dark</span>
+<span className="text-base text-hallpass-error-dark">baseError-dark</span>
+<span className="text-lg text-hallpass-error-dark">lgError-dark</span>
+<span className="text-xl text-hallpass-error-dark">xlError-dark</span>
+</div>
+</div>
+</div>
+<div className="grid grid-cols-3 gap-x-4">
+<div className="p-4 bg-hallpass-error-light">
+<div className="text-lg font-bold text-white">Light Error</div>
+<div className="flex flex-wrap items-center gap-x-4">
+<span className="text-sm text-hallpass-on-error-light">smError</span>
+<span className="text-base text-hallpass-on-error-light">baseError</span>
+<span className="text-lg text-hallpass-on-error-light">lgError</span>
+<span className="text-xl text-hallpass-on-error-light">xlError</span>
+</div>
+</div>
+<div className="p-4 bg-hallpass-error">
+<div className="text-lg font-bold text-white">Default Error</div>
+<div className="flex flex-wrap items-center gap-x-4">
+<span className="text-sm text-hallpass-on-error">smError</span>
+<span className="text-base text-hallpass-on-error">baseError</span>
+<span className="text-lg text-hallpass-on-error">lgError</span>
+<span className="text-xl text-hallpass-on-error">xlError</span>
+</div>
+</div>
+<div className="p-4 bg-hallpass-error-dark">
+<div className="text-lg font-bold text-white">Dark Error</div>
+<div className="flex flex-wrap items-center gap-x-4">
+<span className="text-sm text-hallpass-on-error-dark">smError</span>
+<span className="text-base text-hallpass-on-error-dark">baseError</span>
+<span className="text-lg text-hallpass-on-error-dark">lgError</span>
+<span className="text-xl text-hallpass-on-error-dark">xlError</span>
+</div>
+</div>
+</div>
+<div className="grid grid-cols-3 gap-x-4">
+<div className="p-4 bg-hallpass-error-light/10">
+<div className="text-lg font-bold text-black">Light Error (opaque)</div>
+<div className="flex flex-wrap items-center gap-x-4">
+<span className="text-sm">smRandomText</span>
+<span className="text-base">baseRandomText</span>
+<span className="text-lg">lgRandomText</span>
+<span className="text-xl">xlRandomText</span>
+</div>
+</div>
+<div className="p-4 bg-hallpass-error/10">
+<div className="text-lg font-bold text-black">Default Error (opaque)</div>
+<div className="flex flex-wrap items-center gap-x-4">
+<span className="text-sm">smRandomText</span>
+<span className="text-base">baseRandomText</span>
+<span className="text-lg">lgRandomText</span>
+<span className="text-xl">xlRandomText</span>
+</div>
+</div>
+<div className="p-4 bg-hallpass-error-dark/10">
+<div className="text-lg font-bold text-black">Dark Error (opaque)</div>
+<div className="flex flex-wrap items-center gap-x-4">
+<span className="text-sm">smRandomText</span>
+<span className="text-base">baseRandomText</span>
+<span className="text-lg">lgRandomText</span>
+<span className="text-xl">xlRandomText</span>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details className="my-6">
+<summary className="cursor-pointer font-bold text-lg">Feedback</summary>
+<div className="my-4 px-4 border border-slate-200">
+
+<div className="grid grid-cols-3 gap-x-4">
+<div>
+<div className="text-lg font-bold text-hallpass-feedback-success">success</div>
+<div className="my-2 flex items-center gap-4">
+<span className="w-1 h-1 bg-hallpass-feedback-success"></span>
+<span className="w-2 h-2 bg-hallpass-feedback-success"></span>
+<span className="w-3 h-3 bg-hallpass-feedback-success"></span>
+<span className="w-4 h-4 bg-hallpass-feedback-success"></span>
+<span className="w-5 h-5 bg-hallpass-feedback-success"></span>
+<span className="w-6 h-6 bg-hallpass-feedback-success"></span>
+</div>
+<div className="my-2 flex items-center gap-4">
+<span className="text-xs px-2 py-1 bg-hallpass-feedback-success text-white">text-xs</span>
+<span className="text-sm px-2 py-1 bg-hallpass-feedback-success text-white">text-sm</span>
+<span className="text-base px-2 py-1 bg-hallpass-feedback-success text-white">text-base</span>
+</div>
+</div>
+<div>
+<div className="text-lg font-bold text-hallpass-feedback-warning">warning</div>
+<div className="my-2 flex items-center gap-4">
+<span className="w-1 h-1 bg-hallpass-feedback-warning"></span>
+<span className="w-2 h-2 bg-hallpass-feedback-warning"></span>
+<span className="w-3 h-3 bg-hallpass-feedback-warning"></span>
+<span className="w-4 h-4 bg-hallpass-feedback-warning"></span>
+<span className="w-5 h-5 bg-hallpass-feedback-warning"></span>
+<span className="w-6 h-6 bg-hallpass-feedback-warning"></span>
+</div>
+<div className="my-2 flex items-center gap-4">
+<span className="text-xs px-2 py-1 bg-hallpass-feedback-warning text-white">text-xs</span>
+<span className="text-sm px-2 py-1 bg-hallpass-feedback-warning text-white">text-sm</span>
+<span className="text-base px-2 py-1 bg-hallpass-feedback-warning text-white">text-base</span>
+</div>
+</div>
+<div>
+<div className="text-lg font-bold text-hallpass-feedback-invalid">invalid</div>
+<div className="my-2 flex items-center gap-4">
+<span className="w-1 h-1 bg-hallpass-feedback-invalid"></span>
+<span className="w-2 h-2 bg-hallpass-feedback-invalid"></span>
+<span className="w-3 h-3 bg-hallpass-feedback-invalid"></span>
+<span className="w-4 h-4 bg-hallpass-feedback-invalid"></span>
+<span className="w-5 h-5 bg-hallpass-feedback-invalid"></span>
+<span className="w-6 h-6 bg-hallpass-feedback-invalid"></span>
+</div>
+<div className="my-2 flex items-center gap-4">
+<span className="text-xs px-2 py-1 bg-hallpass-feedback-invalid text-white">text-xs</span>
+<span className="text-sm px-2 py-1 bg-hallpass-feedback-invalid text-white">text-sm</span>
+<span className="text-base px-2 py-1 bg-hallpass-feedback-invalid text-white">text-base</span>
+</div>
+</div>
+</div>
+</div>
+</details>
+</div>
+</details>
+<details className="view-area">
+<summary className="cursor-pointer font-bold text-xl">Fonts</summary>
+<div className="my-4 pl-4 border-l-8 border-slate-300">
+
+<details className="my-6">
+<summary className="cursor-pointer font-bold text-lg">Typography (prose)</summary>
+<div className="my-4 px-4 border border-slate-200">
+
 <p className="mb-4 prose-sm"><strong>prose-sm</strong> Lorem officia nisi dolore ea est consequat. Ex aute cillum aliqua voluptate Lorem cillum pariatur ullamco labore proident ex magna Lorem. Est nulla incididunt deserunt aute eiusmod id Lorem laboris dolor.</p>
 <p className="mb-4 prose"><strong>prose</strong> Lorem officia nisi dolore ea est consequat. Ex aute cillum aliqua voluptate Lorem cillum pariatur ullamco labore proident ex magna Lorem. Est nulla incididunt deserunt aute eiusmod id Lorem laboris dolor.</p>
 <p className="mb-4 prose-lg"><strong>prose-lg</strong> Lorem officia nisi dolore ea est consequat. Ex aute cillum aliqua voluptate Lorem cillum pariatur ullamco labore proident ex magna Lorem. Est nulla incididunt deserunt aute eiusmod id Lorem laboris dolor.</p>
 <p className="mb-4 prose-xl"><strong>prose-xl</strong> Lorem officia nisi dolore ea est consequat. Ex aute cillum aliqua voluptate Lorem cillum pariatur ullamco labore proident ex magna Lorem. Est nulla incididunt deserunt aute eiusmod id Lorem laboris dolor.</p>
-</div></details>
-  <details className="my-6">
-        <summary className="cursor-pointer text-lg font-bold">Sans</summary>
-        <div className="p-8 border font-sans">
+</div>
+</details>
+<details className="my-6">
+<summary className="cursor-pointer font-bold text-lg">sans</summary>
+<div className="my-4 px-4 border border-slate-200">
+
 <div className="my-4 text-hallpass-neutral-light">
 <div className="font-bold text-2xl">sans neutral-light</div>
 <div className="flex flex-wrap items-center gap-x-4 text-sm">
@@ -1289,10 +1363,12 @@ return (
 <span className="font-black">Sans Xl Black</span>
 </div>
 </div>
-</div></details>
-  <details className="my-6">
-        <summary className="cursor-pointer text-lg font-bold">Serif</summary>
-        <div className="p-8 border font-serif">
+</div>
+</details>
+<details className="my-6">
+<summary className="cursor-pointer font-bold text-lg">serif</summary>
+<div className="my-4 px-4 border border-slate-200">
+
 <div className="my-4 text-hallpass-neutral-light">
 <div className="font-bold text-2xl">serif neutral-light</div>
 <div className="flex flex-wrap items-center gap-x-4 text-sm">
@@ -1713,10 +1789,12 @@ return (
 <span className="font-black">Serif Xl Black</span>
 </div>
 </div>
-</div></details>
-  <details className="my-6">
-        <summary className="cursor-pointer text-lg font-bold">Mono</summary>
-        <div className="p-8 border font-mono">
+</div>
+</details>
+<details className="my-6">
+<summary className="cursor-pointer font-bold text-lg">mono</summary>
+<div className="my-4 px-4 border border-slate-200">
+
 <div className="my-4 text-hallpass-neutral-light">
 <div className="font-bold text-2xl">mono neutral-light</div>
 <div className="flex flex-wrap items-center gap-x-4 text-sm">
@@ -2137,10 +2215,12 @@ return (
 <span className="font-black">Mono Xl Black</span>
 </div>
 </div>
-</div></details>
-  <details className="my-6">
-        <summary className="cursor-pointer text-lg font-bold">Brand</summary>
-        <div className="p-8 border font-brand">
+</div>
+</details>
+<details className="my-6">
+<summary className="cursor-pointer font-bold text-lg">brand</summary>
+<div className="my-4 px-4 border border-slate-200">
+
 <div className="my-4 text-hallpass-neutral-light">
 <div className="font-bold text-2xl">brand neutral-light</div>
 <div className="flex flex-wrap items-center gap-x-4 text-sm">
@@ -2561,9 +2641,14 @@ return (
 <span className="font-black">Brand Xl Black</span>
 </div>
 </div>
-</div></details>
-</div></details>
-<details className="my-12 view-area"><summary className="cursor-pointer font-bold text-xl">UI Elements</summary><div className="my-4 pl-4 border-l-8 border-slate-300">
+</div>
+</details>
+</div>
+</details>
+<details className="view-area">
+<summary className="cursor-pointer font-bold text-xl">UI Elements</summary>
+<div className="my-4 pl-4 border-l-8 border-slate-300">
+
 <div className="text-xl font-bold">Headings</div>
 <div className="text-lg font-medium">Without Margins</div>
 <h1 className="no-margin">Heading - H1</h1>
@@ -2586,7 +2671,12 @@ return (
 <div className="my-1"><a href="#" className="primary">Link PRIMARY</a></div>
 <div className="my-1"><a href="#" className="secondary">Link SECONDARY</a></div>
 <div className="my-1"><a href="#" className="error">Link ERROR</a></div>
-</div></details>
+</div>
+</details>
+<details className="">
+<summary className="cursor-pointer font-bold text-xl">Sections</summary>
+<div className="my-4">
+
 <div className="mt-12 text-4xl font-medium text-center">Sections</div>
 <AySection color="surface" intensity="light" >
   <div className="font-bold text-xl">SECTION - surface - light - full opacity</div>
@@ -2804,6 +2894,8 @@ return (
   Velit eiusmod non sit aliquip. Commodo magna id proident ad anim. Mollit exercitation nisi amet anim sint esse consectetur incididunt nisi. Ullamco laboris nisi irure ullamco esse ipsum adipisicing dolor proident aute dolor. Aliquip nisi do ea elit mollit ea amet aliqua ad. Incididunt ullamco exercitation laborum minim voluptate commodo ea laboris amet Lorem do. In mollit nostrud esse anim nulla ut veniam occaecat nisi deserunt sit cillum voluptate tempor.
   </div>
 </AySection>
+</div>
+</details>
 </div>
 );
 }

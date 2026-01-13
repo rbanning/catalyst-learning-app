@@ -3,7 +3,7 @@
   ```js
   // application specific rules
   {
-    files: ["src/**/*.ts", "src/**/*.tsx"],
+    files: ["**/*.ts", "**/*.tsx"],   //if using /src/ folder... ["src/**/*.ts", "src/**/*.tsx"]
     rules: {
       "@typescript-eslint/no-unused-vars": [
           "error", {

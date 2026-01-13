@@ -1,0 +1,7 @@
+/* these are additional colors that are specific to the app */
+
+@theme {
+  --color-hallpass-feedback-success: #24833a;
+  --color-hallpass-feedback-warning: #ad6305;
+  --color-hallpass-feedback-invalid: #dc3545;
+}
