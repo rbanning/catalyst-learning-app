@@ -31,13 +31,13 @@ export function PrimaryHeader() {
           {/* DESKTOP / TABLET BUTTONS */}
           <span className="hidden md:inline-flex md:items-center md:flex-1 md:gap-4 lg:gap-6">
             {/* todo: update as needed */}
-            <Link href="/test">
+            <Link href="/demo/challenge">
               <button>
                 <FontAwesomeIcon icon={faTents} />
-                <span>Test</span>
+                <span>Static Challenge</span>
               </button>
             </Link>
-            <Link href="/about/theme">
+            <Link href="/demo/theme">
               <button>
                 <FontAwesomeIcon icon={faSmile} />
                 <span>Theme</span>

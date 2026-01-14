@@ -6,7 +6,6 @@ import appImage from "@/public/app-images/catalyst-64.png";
 
 export default function Home() {
   const size = 48;
-  const logoSize = 24;
   return (
     <div className="relative max-w-xl mx-auto mt-36">
       <div>
