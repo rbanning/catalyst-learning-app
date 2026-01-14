@@ -1,0 +1,18 @@
+/* 
+  be sure create a font.ts file to load the fonts 
+  and then set the fonts in layout.tsx
+*/
+
+@theme {
+  --font-sans: 'var(--font-sans)',      /* (e.g. Open Sans) */
+                'ui-sans-serif',
+                'system-ui',
+                'sans-serif'; 
+  --font-serif: 'var(--font-serif)',    /* (e.g. Roboto Serif) */
+                'ui-serif',
+                'serif';
+  --font-brand: 'var(--font-brand)',    /* (e.g. Dosis) */ 
+                'ui-sans-serif',
+                'system-ui',
+                'sans-serif';
+}

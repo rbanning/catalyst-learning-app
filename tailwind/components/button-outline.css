@@ -1,0 +1,10 @@
+/* 
+NOTE: this applies to the ButtonBase component @/ui/base-ui/client/button-outline/button-outline 
+      and replaces the use of module css (button-outline.module.css)
+*/
+.button-outline {
+  @apply px-8 py-1 rounded-2xl 
+      border-2 shadow-sm hover:shadow-md hover:shadow-black/50
+      focus:ring-1 focus:ring-hallpass-surface-dark focus:shadow-lg;
+
+}

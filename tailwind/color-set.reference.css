@@ -1,0 +1,91 @@
+/* GENERATE BY ChatGPT */
+
+/* PROFESSION */
+:root {
+  /* Primary (Blue) */
+  --color-primary-light: #1e4fd8;
+  --color-on-primary-light: #ffffff;
+
+  --color-primary: #1e40af;
+  --color-on-primary: #ffffff;
+
+  --color-primary-dark: #172554;
+  --color-on-primary-dark: #ffffff;
+
+  /* Secondary (Complementary Orange) */
+  --color-secondary-light: #d97706;
+  --color-on-secondary-light: #000000;
+
+  --color-secondary: #b45309;
+  --color-on-secondary: #ffffff;
+
+  --color-secondary-dark: #92400e;
+  --color-on-secondary-dark: #ffffff;
+
+  /* Neutral */
+  --color-neutral-light: #4b5563;
+  --color-on-neutral-light: #ffffff;
+
+  --color-neutral: #374151;
+  --color-on-neutral: #ffffff;
+
+  --color-neutral-dark: #1f2937;
+  --color-on-neutral-dark: #ffffff;
+
+  /* Error */
+  --color-error-light: #dc2626;
+  --color-on-error-light: #ffffff;
+
+  --color-error: #b91c1c;
+  --color-on-error: #ffffff;
+
+  --color-error-dark: #7f1d1d;
+  --color-on-error-dark: #ffffff;
+
+  --color-surface: #f1f5f9;
+}
+
+/* MUTED BLUE-GRAY */
+:root {
+  /* Primary (Blue-Gray) */
+  --color-primary-light: #2a4a73;
+  --color-on-primary-light: #ffffff;
+
+  --color-primary: #1f3a5f;
+  --color-on-primary: #ffffff;
+
+  --color-primary-dark: #16263f;
+  --color-on-primary-dark: #ffffff;
+
+  /* Secondary (Complementary Amber) */
+  --color-secondary-light: #e0a84b;
+  --color-on-secondary-light: #000000;
+
+  --color-secondary: #c0841a;
+  --color-on-secondary: #000000;
+
+  --color-secondary-dark: #8a5a0a;
+  --color-on-secondary-dark: #ffffff;
+
+  /* Neutral */
+  --color-neutral-light: #44505c;
+  --color-on-neutral-light: #ffffff;
+
+  --color-neutral: #2f3a45;
+  --color-on-neutral: #ffffff;
+
+  --color-neutral-dark: #1c232b;
+  --color-on-neutral-dark: #ffffff;
+
+  /* Error */
+  --color-error-light: #b91c1c;
+  --color-on-error-light: #ffffff;
+
+  --color-error: #9f1d1d;
+  --color-on-error: #ffffff;
+
+  --color-error-dark: #7a1515;
+  --color-on-error-dark: #ffffff;
+
+  --color-surface: #f4f6f8;
+}

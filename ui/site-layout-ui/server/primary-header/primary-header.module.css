@@ -1,0 +1,11 @@
+@reference "tailwindcss";
+
+/* ok - only references basic tailwind utilities - */
+
+.header {
+  & button {
+    @apply inline-flex items-center gap-2
+           opacity-85 scale-95 transition-all 
+           hover:opacity-100 hover:scale-100;
+  }
+}

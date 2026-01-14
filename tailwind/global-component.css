@@ -1,0 +1,8 @@
+/**
+      Importing from the ./components folder
+**/
+
+@import "./components/button-base.css";
+@import "./components/button.css";
+@import "./components/button-solid.css";
+@import "./components/button-outline.css";

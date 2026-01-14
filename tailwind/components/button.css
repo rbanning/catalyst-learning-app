@@ -1,0 +1,32 @@
+/* NOTE: this applies to the Button component @/ui/base-ui/client/buttons/button
+      and replaces the use of module css (button-base.module.css)
+*/
+
+.button {
+  @apply p-1;
+
+  &::before {
+    @apply absolute top-0 bottom-0 left-0 right-0 
+      border-b-2 border-b-transparent
+      bg-transparent duration-200;
+    content: '';
+  }
+  &._hover-bottom {
+    &:hover::before {
+      @apply border-b-hallpass-on-background/25;
+    }
+  }
+  &._hover-bg {
+    &:hover::before {
+      @apply bg-hallpass-on-background/5;
+    }
+  }
+  &._hover-grow {
+    &:hover {
+      @apply scale-105;
+    }
+    &:hover::before {
+      @apply bg-hallpass-on-background/5;
+    }
+  }
+}

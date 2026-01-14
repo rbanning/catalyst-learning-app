@@ -1,0 +1,34 @@
+@theme {
+	--color-hallpass-neutral: #374151;
+	--color-hallpass-on-neutral: #FFFFFF;
+	--color-hallpass-neutral-light: #4b5563;
+	--color-hallpass-on-neutral-light: #FFFFFF;
+	--color-hallpass-neutral-dark: #1f2937;
+	--color-hallpass-on-neutral-dark: #FFFFFF;
+	--color-hallpass-primary: #1e40af;
+	--color-hallpass-on-primary: #FFFFFF;
+	--color-hallpass-primary-light: #1e4fd8;
+	--color-hallpass-on-primary-light: #FFFFFF;
+	--color-hallpass-primary-dark: #172554;
+	--color-hallpass-on-primary-dark: #FFFFFF;
+	--color-hallpass-secondary: #b45309;
+	--color-hallpass-on-secondary: #FFFFFF;
+	--color-hallpass-secondary-light: #d97706;
+	--color-hallpass-on-secondary-light: #FFFFFF;
+	--color-hallpass-secondary-dark: #92400e;
+	--color-hallpass-on-secondary-dark: #FFFFFF;
+	--color-hallpass-error: #b91c1c;
+	--color-hallpass-on-error: #FFFFFF;
+	--color-hallpass-error-light: #dc2626;
+	--color-hallpass-on-error-light: #FFFFFF;
+	--color-hallpass-error-dark: #7f1d1d;
+	--color-hallpass-on-error-dark: #FFFFFF;
+	--color-hallpass-surface: #f1f5f9;
+	--color-hallpass-on-surface: #000000;
+	--color-hallpass-surface-light: #f8fafc;
+	--color-hallpass-on-surface-light: #000000;
+	--color-hallpass-surface-dark: #e2e8f0;
+	--color-hallpass-on-surface-dark: #000000;
+	--color-hallpass-background: #FFFFFF;
+	--color-hallpass-on-background: #000000;
+}
