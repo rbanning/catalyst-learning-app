@@ -16,7 +16,7 @@ export function PrimaryFooter() {
       verticalPadding="none"
       className="mt-24"
     >
-      <footer className="group pt-12">
+      <footer className="group pt-12 pb-4">
         <div className={css}>
           <div className="flex gap-1">
             <div>
@@ -37,12 +37,7 @@ export function PrimaryFooter() {
               <FontAwesomeIcon icon={faGithub} />
             </a>
           </div>
-        </div>
-        <div className="my-4 py-2 flex justify-center gap-4 bg-hallpass-primary-dark/70 text-white rounded text-sm">
-          <span>&copy;{new Date().getFullYear()} Hallpass and Friends (a Banning Applications Pivot) - all rights reserved</span>
-          <Link href="/about/privacy">Privacy</Link>
-          <Link href="/about/terms">Terms</Link>
-        </div>
+        </div>        
       </footer>
     </AySection>
   );
